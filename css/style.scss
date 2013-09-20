@@ -1,0 +1,74 @@
+$blue: #1d2265;
+$white: #fff;
+$orange: #b0722c;
+$red: #7f2228;
+$black: #555;
+
+$navColor: brown;
+$formColor: $blue;
+
+@import "bootstrap";
+
+@media (min-width: 960px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+body { 
+	padding-top: 50px;
+}
+
+.navbar-fixed-top { 
+	background-color: white;
+}
+
+.jumbotron { 
+	overflow: hidden;
+	p { 
+		font-size: smaller;
+		&.first-child { 
+			margin-top: 20px;
+		}
+	}
+	dl { 
+		font-size: smaller;
+	}
+}
+
+#contact { 
+	display: none;
+	#thankyouMessage { 
+		display: none;
+	}
+}
+
+footer { 
+	margin-top: 20px;
+	border-top: 1px solid #ddd;
+	padding: 10px;
+}
+
+.thumbnails { 
+	.row { 
+		> div { 
+			margin-bottom: 2em;
+
+		}
+	}
+	cursor: pointer;
+	.thumbnail { 
+		border: 0px;
+		&:hover { 
+			background-color: #efefef;
+		}
+	}
+	
+}
+
+.carousel { 
+	margin-bottom: 1em;
+	.item { 
+		max-height: 400px;
+	}
+}
