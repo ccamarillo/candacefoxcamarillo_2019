@@ -101,6 +101,7 @@ a {
 	height: 2em;
 	margin-bottom: 0px;
 	background-size: cover;
+	margin-top: 0px;
 	&.thin { 
 		height: 1em;
 	}
@@ -148,7 +149,7 @@ a {
 	}
 }
 
-#thumbnailJubmo { 
+#thumbnailJumbo { 
 	background-color: white;
 	margin: 0px;
 	//padding: 70px;
@@ -192,6 +193,7 @@ a {
 		}
 		img { 
 			max-width: 100%;
+			max-height: 400px;
 		}
 
 		.links { 
@@ -214,6 +216,7 @@ a {
 		.screenshots { 
 			img { 
 				&.active { 
+
 					display: block;
 				}
 			}
@@ -267,7 +270,8 @@ footer {
 }
 
 .thumbnails { 
-	margin-bottom: 20px;
+	margin-bottom: 0px !important;
+	padding-bottom: 0px;
 	h2 { 
 		font-weight: 300;
 		color: $green;

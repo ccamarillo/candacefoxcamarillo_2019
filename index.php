@@ -1,9 +1,200 @@
 <?php
 
     $projects = array(
+        
+        array(
+            'title' => 'mBytes',
+            'type' => 'hybrid mobile app',
+            'thumbnail' => 'mbytes_1.jpg',
+            'dates' => '2013',
+            'technologies' => 'PHP, Yii, MySQL, jQuery, Backbone.js, HTML5, SASS, Icenium',
+            'description' => '
+                <p>
+                    Built for iOS and Android and supporting a range of devices sizes, this mobile app distributes sales materials to users, with automatic updating and offline access.  All content is hosted on a web service (built with LAMP stack and Yii) and is distributed to users when they are online.  User account information and metrics are sent back to the webservice.  The mobile app itself is built in HTML5 using the Backbone.js framework.  The webservice provides a REST API, with models saved into Local Storage on the user\'s device.
+                </p>',
+            'links' => array(
+                array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/mBytes.js'),
+                array('type' => 'live', 'url' => 'https://play.google.com/store/apps/details?id=com.telerik.vmwarembytesapp&hl=en'),
+            ),
+            'screenshots' => array(
+                'mbytes2.png',
+            )
+        ),
+        array(
+            'title' => 'Avatar Maker',
+            'type' => 'HTML5 character generator',
+            'thumbnail' => 'avatar_1.jpg',
+            'dates' => '2011',
+            'technologies' => 'HTML5, jQuery, CSS, Canvas',
+            'description' => '
+                <p>
+                    This avatar maker allowed users to build custom characters with facial features, outfits, and acccessories, and allowed users to export and share their avatars.  I was responsible for the character rendering portion of the project.
+                </p>',
+            'links' => array(
+                array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/avatarMaker.js'),
+            ),
+            'screenshots' => array(
+                'avatarMaker.png',
+                'avatarMaker2.png',
+            )
+        ),
+        array(
+            'title' => 'Insight',
+            'type' => 'API-driven analytics platform',
+            'thumbnail' => 'analytics_1.jpg',
+            'dates' => '2013',
+            'technologies' => 'PHP, Zend 2.0, MS-SQL, HTML5, jQuery, Backbone.js, Twitter Bootstrap',
+            'description' => '
+                <p>
+                    How do you securely present visualizations of data from any number of sources to select users?  This project\'s stakeholder was using and out-of-the-box solution that was cumbersome and lacked highly desired functionality.  I built a platform that managed users, permissions, and dashboards, and allowed for a freeform presentation of any data from any source on the net.  The platform provides the security and infrastructure, but leaves the content of the dashboards to be freeform.  The interface, built in HTML5, is decoupled from the brains, which delivers content over a REST API, which could allow the front-end of the application to be converted into a hybrid mobile app. 
+                </p>',
+            'links' => array(
+                array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/insight.js'),
+            ),
+            'screenshots' => array(
+                'analytics_2.png',
+            )
+        ),
+        array(
+            'title' => 'Big Data Dashboard',
+            'type' => 'data visualization',
+            'thumbnail' => 'bigdata_1.jpg',
+            'dates' => '2012',
+            'technologies' => 'HTML5, LESS, jQuery',
+            'description' => '
+                <p>
+                    A static website that gives users an idea of the amount of database created in real time.
+                </p>',
+            'links' => array(
+                array('type' => 'live', 'url' => 'http://www.intel.com/content/www/us/en/big-data/big-data-dashboard.html?view=dataConsumptionQuiz'),
+            ),
+            'screenshots' => array(
+                'bigdata1.png',
+                'bigdata2.png',
+                'bigdata3.png',
+            )
+        ),
+        array(
+            'title' => 'Chamber Music Northwest',
+            'type' => 'data-driven website',
+            'thumbnail' => 'cmnw_1.jpg',
+            'dates' => '2004',
+            'technologies' => 'PHP, MySQL, HTML, Javascript, CSS',
+            'description' => '
+                <p>
+                    Back in early days at the Art Institute, I thought it a wise idea to start pursuing a student job that used my skills and interests, rather than working in fast food. My skills and interests being web design and music, I started checking out local music organizations whose websites I thought could use an overhaul. Chamber Music Northwest came up as an option. I reached out, and turns out, they\'d been looking for me for years! A fruitful relationship began. Here\'s some screenshots of my original design.  The organization continues to use the backend infrastructure.
+                </p>
+                <p>
+                    Here are some screenshots of my original design.
+                </p>',
+            'links' => array(
+                array('type' => 'live', 'url' => 'http://www.cmnw.org'),
+            ),
+            'screenshots' => array(
+                'cmnw_1a.jpg',
+                'cmnw_2.jpg',
+                'cmnw_3.jpg',
+                'cmnw_4.jpg',
+                'cmnw_5.jpg',
+            )
+        ),
+        array(
+            'title' => 'FoodRoute',
+            'type' => 'social media platform',
+            'thumbnail' => 'foodroute_1.jpg',
+            'dates' => '',
+            'technologies' => 'PHP, Symfony 1.0, MySQL, HTML, jQuery',
+            'description' => '
+                <p>
+                    FoodRoute.org is a pet project of a friend of mine and myself. It is in its fledgling stages at the moment, but will function as a community-generated data clearing house for food distribution networks, from seed to table.
+                </p>',
+            'links' => array(
+                array('type' => 'live', 'url' => 'http://www.foodroute.org'),
+            ),
+            'screenshots' => array(
+                'foodroute_1a.jpg',
+                'foodroute_2.jpg',
+                'foodroute_3.jpg'
+            )
+        ),
+        array(
+            'title' => 'SalesZ&uuml;m',
+            'type' => 'sales platform',
+            'thumbnail' => 'saleszum_1.jpg',
+            'dates' => '2009-2010',
+            'technologies' => 'PHP, Symfony 1.0, MySQL, HTML, jQuery',
+            'description' => '
+                <p>
+                    SalesZum was a presentation builder developed for Spitball Media. Users could manage a sales team, a collection of assets like video, slideshows, and documents, and put it all together in a custom, secure application.  This startup did not quite make it off the ground.
+                </p>',
+            'links' => array(
+            ),
+            'screenshots' => array(
+                'saleszum_1a.jpg',
+                'saleszum_2.jpg',
+                'saleszum_3.jpg',
+                'saleszum_4.jpg',
+                'saleszum_5.jpg',
+                'saleszum_6.jpg',
+            )
+        ),
+        array(
+            'title' => 'ASUS Transformer',
+            'type' => 'animated parallax product showcase',
+            'thumbnail' => 'transformer_1.jpg',
+            'dates' => '2012',
+            'technologies' => 'HTML5, jQuery, LESS',
+            'description' => '
+                <p>
+                    This product showcase featured a custom parallax animation.
+                </p>',
+            'links' => array(
+                array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/transformer.js'),
+            ),
+            'screenshots' => array(
+                'transformer_1a.png',
+                'transformer_2.png',
+            )
+        ),
+        array(
+            'title' => 'Western Star',
+            'type' => 'product showcase',
+            'thumbnail' => 'westernstar_1.jpg',
+            'dates' => '2012',
+            'technologies' => 'HTML5, jQuery, LESS',
+            'description' => '
+                <p>
+                    A simple product showcase template with fluid layout.
+                </p>',
+            'links' => array(
+                array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/westernStar.html'),
+            ),
+            'screenshots' => array(
+                'truck1.png',
+                'truck2.png',
+            )
+        ),
+        array(
+            'title' => 'What About Me?',
+            'type' => 'social media infographic generator',
+            'thumbnail' => 'wam_1.jpg',
+            'dates' => '2012',
+            'technologies' => 'PHP, MySQL, Zend 1.0, HTML5, LESS, jQuery, Raphael, d3',
+            'description' => '
+                <p>
+                    Visualize your social media life.  This application reached out to Twitter, Youtube, and Facebook to retrieve your posts, likes, videos, tweets, and other generated content, analyzed it, and spit out a fancy infographic which could be shared.
+                </p>',
+            'links' => array(
+                array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/whatAboutMe.php'),
+            ),
+            'screenshots' => array(
+                'wam_1a.png',
+                'wam_2.png',
+            )
+        ),
         array(
             'title' => 'AltRider.com',
-            'type' => 'hybrid mobile app',
+            'type' => 'e-commerce solution',
             'thumbnail' => 'altrider_1.jpg',
             'dates' => '2008-2010',
             'technologies' => 'symfony, PHP, MySQL, XHTML, CSS, jQuery',
@@ -219,7 +410,7 @@
 
         </div>
 
-        <div class="jumbotron" id="thumbnailJubmo">
+        <div class="jumbotron" id="thumbnailJumbo">
             <div class="container thumbnails">
                 <h2>Explore some of my work.</h2>
                 <div class="row">
