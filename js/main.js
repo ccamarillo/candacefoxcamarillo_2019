@@ -44,7 +44,7 @@ $(document).ready(function() {
 		openContact: function() {
 			$.scrollTo('0px', { duration: 500 });
 			this.hideContactReceipt(); 
-			$('#welcome').slideUp();
+			$('#welcome, #slideshow').slideUp();
 			$('#contact').slideDown();
 
 		},
