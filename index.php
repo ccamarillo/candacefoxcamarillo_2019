@@ -63,7 +63,7 @@
             'technologies' => 'HTML5, LESS, jQuery',
             'description' => '
                 <p>
-                    A static website that gives users an idea of the amount of database created in real time.
+                    A static website that gives users an idea of the amount of data created in real time.
                 </p>',
             'links' => array(
                 array('type' => 'live', 'url' => 'http://www.intel.com/content/www/us/en/big-data/big-data-dashboard.html?view=dataConsumptionQuiz'),
