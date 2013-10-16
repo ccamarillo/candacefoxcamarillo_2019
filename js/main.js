@@ -22,6 +22,11 @@ $(document).ready(function() {
 				self.showSlideshow($(e.target).closest('.thumbWrapper').index());
 			});
 
+			$('.projectsLink').click(function(e) { 
+				e.preventDefault();
+				self.showSlideshow(0);
+			});
+
 			$('form').validate();
 			
 			// SLIDESHOWS

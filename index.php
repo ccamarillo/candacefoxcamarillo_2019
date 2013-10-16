@@ -146,10 +146,11 @@
             'technologies' => 'HTML5, jQuery, LESS',
             'description' => '
                 <p>
-                    This product showcase featured a custom parallax animation.
+                    This product showcase featured a custom parallax animation. The live site has not been maintained &mdash; best viewed in Firefox.
                 </p>',
             'links' => array(
                 array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/transformer.js'),
+                array('type' => 'live', 'url' => 'http://promos.asus.com/US/EeePadTransformerPrime/')
             ),
             'screenshots' => array(
                 'transformer_1a.png',
@@ -224,14 +225,12 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
         <title>Candace Fox Camarillo: Interactive Developer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
-
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -244,7 +243,7 @@
             <div class="container">
                 <div class="header">
                     <p>
-                        <a href="#" class="contactLink">Contact</a> &nbsp;/&nbsp; <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a>
+                        <a href="#" class="contactLink">Contact</a> &nbsp;/&nbsp; <a href="#" class="projectsLink">Projects</a> &nbsp;/&nbsp; <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a>
                     </p>
                     <h3>Candace&nbsp;Fox&nbsp;Camarillo <span>Interactive&nbsp;Developer</span></h3>
                 </div>
@@ -344,65 +343,6 @@
                             </div>
                             <?php $projectCounter ++ ; ?>
                         <?php } ?>
-
-
-                        <!--<div class="project item active">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-7">
-                                    <h3>AltRider.com</h3>
-                                    <p class="dates">2008-2010</p>
-                                    <p class="technologies">symfony, PHP, MySQL, XHTML, CSS, jQuery</p>
-                                    <div class="description">
-                                        <p>
-                                            AltRider.com was one of those dream projects where I had complete control over the technologies used. AltRider needed a completely custom, data-driven ecommerce application. We were fortunate to begin with mockups designed by Hansen Belyea up in Seattle.
-                                        </p>
-                                        <p>
-                                            I worked with my partner in crime, Dave Camarillo, over at DC Technical. He took care of the database design, back-end functionality, and API integrations. I was charged with front-end development, but I also took on all aspects of the social and community portions of the site. The application handles inventory management, shipping procedures, purchase orders, newsletter lists, and much more. Most of the content on the site is editable by the folks at AltRider.
-                                        </p>
-                                    </div>
-                                    <div class="links">
-                                            <a href="#"><span class="live"></span> Live Site</a>
-                                            <a href="#"><span class="sample"></span> Code Sample</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-5">
-                                    <div class="screenshots">
-                                        <img class="active" src="img/screenshots/altrider_full_1.jpg" alt="Altrider.com" />
-                                        <img src="img/screenshots/altrider_full_2.jpg" alt="Altrider.com" />
-                                        <img src="img/screenshots/altrider_full_3.jpg" alt="Altrider.com" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project item">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-7">
-                                    <h3>AltRider.com</h3>
-                                    <p class="dates">2008-2010</p>
-                                    <p class="technologies">symfony, PHP, MySQL, XHTML, CSS, jQuery</p>
-                                    <div class="description">
-                                        <p>
-                                            AltRider.com was one of those dream projects where I had complete control over the technologies used. AltRider needed a completely custom, data-driven ecommerce application. We were fortunate to begin with mockups designed by Hansen Belyea up in Seattle.
-                                        </p>
-                                        <p>
-                                            I worked with my partner in crime, Dave Camarillo, over at DC Technical. He took care of the database design, back-end functionality, and API integrations. I was charged with front-end development, but I also took on all aspects of the social and community portions of the site. The application handles inventory management, shipping procedures, purchase orders, newsletter lists, and much more. Most of the content on the site is editable by the folks at AltRider.
-                                        </p>
-                                    </div>
-                                    <div class="links">
-                                            <a href="#"><span class="live"></span> Live Site</a>
-                                            <a href="#"><span class="sample"></span> Code Sample</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-5">
-                                    <div class="screenshots">
-                                        <img class="active" src="img/screenshots/altrider_full_1.jpg" alt="Altrider.com" />
-                                        <img src="img/screenshots/altrider_full_2.jpg" alt="Altrider.com" />
-                                        <img src="img/screenshots/altrider_full_3.jpg" alt="Altrider.com" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        -->  
                     </div>
                 </div>
 
@@ -426,110 +366,7 @@
                             </div>
                         </div>
                     <?php } ?>
-
-                    <!--<div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                mBytes
-                                <span>hybrid mobile app</span>
-                            </div>
-                            <img src="img/screenshots/mbytes_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                Insight
-                                <span>analytics platform</span>
-                            </div>
-                            <img src="img/screenshots/analytics_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                Meego Avatar Maker
-                                <span>HTML5 avatar generator</span>
-                            </div>
-                            <img src="img/screenshots/avatar_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                Big Data Dashboard
-                                <span>data visualization</span>
-                            </div>
-                            <img src="img/screenshots/bigdata_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                Chamber Music Northwest
-                                <span>data-driven website</span>
-                            </div>
-                            <img src="img/screenshots/cmnw_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                FoodRoute
-                                <span>social media platform</span>
-                            </div>
-                            <img src="img/screenshots/foodroute_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                SalesZ&uuml;m
-                                <span>sales platform</span>
-                            </div>
-                            <img src="img/screenshots/saleszum_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                ASUS Transformer
-                                <span>animated parallax product showcase</span>
-                            </div>
-                            <img src="img/screenshots/transformer_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                Western Star
-                                <span>product showcase</span>
-                            </div>
-                            <img src="img/screenshots/westernstar_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                What About Me?
-                                <span>social media infographic generator</span>
-                            </div>
-                            <img src="img/screenshots/wam_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="thumbWrapper col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <div class="description">
-                                AltRider
-                                <span>e-commerce solution</span>
-                            </div>
-                            <img src="img/screenshots/altrider_1.jpg" alt="" />
-                        </div>
-                    </div>
-                    -->
-
                 </div>
-                
             </div>
         </div>
 
@@ -539,7 +376,7 @@
             <div class="container">
                 <p class="pull-right">
                     <small>
-                        <a href="#" class="contactLink">Contact</a> &nbsp;/&nbsp; <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a>
+                        <a href="#" class="contactLink">Contact</a> &nbsp;/&nbsp; <a href="#" class="projectsLink">Projects</a> &nbsp;/&nbsp; <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a>
                     </small>
                 </p>
                 <p class="text-muted">
