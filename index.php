@@ -14,7 +14,7 @@
                 </p>',
             'links' => array(
                 array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/mBytes.js'),
-                array('type' => 'live', 'url' => 'https://play.google.com/store/apps/details?id=com.telerik.vmwarembytesapp&hl=en'),
+                array('type' => 'live', 'url' => 'https://itunes.apple.com/us/app/vmware-mbytes-sales-tool/id689570569?ls=1&mt=8'),
             ),
             'screenshots' => array(
                 'mbytes2.png',
