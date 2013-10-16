@@ -46,7 +46,7 @@
             'technologies' => 'PHP, Zend 2.0, MS-SQL, HTML5, jQuery, Backbone.js, Twitter Bootstrap',
             'description' => '
                 <p>
-                    How do you securely present visualizations of data from any number of sources to select users?  This project\'s stakeholder was using and out-of-the-box solution that was cumbersome and lacked highly desired functionality.  I built a platform that managed users, permissions, and dashboards, and allowed for a freeform presentation of any data from any source on the net.  The platform provides the security and infrastructure, but leaves the content of the dashboards to be freeform.  The interface, built in HTML5, is decoupled from the brains, which delivers content over a REST API, which could allow the front-end of the application to be converted into a hybrid mobile app. 
+                    How do you securely present visualizations of data from any number of sources to select users?  This project\'s stakeholder was using an out-of-the-box solution that was cumbersome and lacked highly desired functionality.  I built a platform that managed users, permissions, and dashboards, and allowed for a freeform presentation of any data from any source on the net.  The platform provides the security and infrastructure, but leaves the content of the dashboards to be freeform.  The interface, built in HTML5, is decoupled from the brains, which delivers content over a REST API, which could allow the front-end of the application to be converted into a hybrid mobile app. 
                 </p>',
             'links' => array(
                 array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/insight.js'),
