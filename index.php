@@ -4,7 +4,7 @@
         
         array(
             'title' => 'The Bully Project Mural',
-            'type' => 'API-driven Responsive Website',
+            'type' => 'API-driven social media experience',
             'thumbnail' => 'bully_thumb.jpg',
             'dates' => '2014',
             'technologies' => 'Backbone.js, HTML5, SASS, Behance API',
@@ -21,10 +21,10 @@
         ),
         array(
             'title' => 'Diller Teen Fellows',
-            'type' => 'Multilanguage Website',
+            'type' => 'multilingual website',
             'thumbnail' => 'dtf_thumb.jpg',
             'dates' => '2014',
-            'technologies' => 'ExpressionEngine, Foundation, HTML5, SASS, Coffeescript',
+            'technologies' => 'ExpressionEngine, Foundation, HTML5, SASS, CoffeeScript',
             'description' => '
                 <p>
                     One of the more interesting challenges of this website was the required support for both English and Hebrew, which reads right-to-left.  This affects not only text but general design.    
@@ -37,14 +37,14 @@
             )
         ),
         array(
-            'title' => 'Exterro.com',
-            'type' => 'CMS-Driven Website and Blog',
+            'title' => 'Exterro',
+            'type' => 'CMS-driven website and blog',
             'thumbnail' => 'exterro_thumb.jpg',
             'dates' => '2014',
-            'technologies' => 'Craft CMS, Bootstrap, Twig, HTML5, SASS, Coffeescript',
+            'technologies' => 'Craft CMS, Bootstrap, Twig, HTML5, SASS, CoffeeScript',
             'description' => '
                 <p>
-                    A responsive website for an E-Discovery software suite.  My first adventure with Craft CMS.
+                    A responsive website for an e-discovery software suite.  My first adventure with Craft CMS.
                 </p>',
             'links' => array(
                 array('type' => 'live', 'url' => 'http://exterro.com'),
@@ -61,11 +61,10 @@
             'technologies' => 'PHP, Yii, MySQL, jQuery, Backbone.js, HTML5, SASS, Icenium',
             'description' => '
                 <p>
-                    Built for iOS and Android and supporting a range of device sizes, this mobile app distributes sales materials to users, with automatic updating and offline access.  All content is hosted on a web service (built with LAMP stack and Yii) and is distributed to users when they are online.  User account information and metrics are sent back to the webservice.  The mobile app itself is built in HTML5 using the Backbone.js framework.  The webservice provides a REST API, with models saved into Local Storage on the user\'s device.
+                    Built for iOS and Android and supporting a range of device sizes, this mobile app distributes sales materials to users, with automatic updating and offline access.  All content is hosted on a web service (built with LAMP stack and Yii) and is distributed to users when they are online.  User account information and metrics are sent back to the web service.  The mobile app itself is built in HTML5 using the Backbone.js framework.  The web service provides a REST API, with models saved into local storage on the user\'s device.
                 </p>',
             'links' => array(
-                array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/mBytes.js'),
-                array('type' => 'live', 'url' => 'https://itunes.apple.com/us/app/vmware-mbytes-sales-tool/id689570569?ls=1&mt=8'),
+                array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/mBytes.js')
             ),
             'screenshots' => array(
                 'mbytes2.png',
@@ -97,7 +96,7 @@
             'technologies' => 'PHP, Zend 2.0, MS-SQL, HTML5, jQuery, Backbone.js, Twitter Bootstrap',
             'description' => '
                 <p>
-                    How do you securely present visualizations of data from any number of sources to select users?  This project\'s stakeholder was using an out-of-the-box solution that was cumbersome and lacked highly desired functionality.  I built a platform that managed users, permissions, and dashboards, and allowed for a freeform presentation of any data from any source on the net.  The platform provides the security and infrastructure, but leaves the content of the dashboards to be freeform.  The interface, built in HTML5, is decoupled from the brains, which delivers content over a REST API, which could allow the front-end of the application to be converted into a hybrid mobile app. 
+                    How do you securely present visualizations of data from any number of sources to select users?  This project\'s stakeholder was using an out-of-the-box solution that was cumbersome and lacked highly desired functionality.  I built a platform that managed users, permissions, and dashboards, and allowed for a custom presentation of any data from any source on the net.  The platform provides the security and infrastructure, but leaves the content of the dashboards to be freeform.  The interface, built in HTML5, is decoupled from the backend, which delivers content over a REST API, allowing the front-end of the application to be converted into a hybrid mobile app. 
                 </p>',
             'links' => array(
                 array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/insight.js'),
@@ -127,15 +126,15 @@
             )
         ),
         */
-        array(
+        /*array(
             'title' => 'Chamber Music Northwest',
             'type' => 'data-driven website',
             'thumbnail' => 'cmnw_1.jpg',
             'dates' => '2004',
-            'technologies' => 'PHP, MySQL, HTML, Javascript, CSS',
+            'technologies' => 'PHP, MySQL, HTML, JavaScript, CSS',
             'description' => '
                 <p>
-                    Back in early days at the Art Institute, I thought it a wise idea to start pursuing a student job that used my skills and interests, rather than working in fast food. My skills and interests being web design and music, I started checking out local music organizations whose websites I thought could use an overhaul. Chamber Music Northwest came up as an option. I reached out, and turns out, they\'d been looking for me for years! A fruitful relationship began. Here\'s some screenshots of my original design.  The organization continues to use the backend infrastructure.
+                    One of my first professional projects using PHP, the backend for this platform continues to drive CMNW\'s web presence.
                 </p>
                 <p>
                     Here are some screenshots of my original design.
@@ -151,6 +150,7 @@
                 'cmnw_5.jpg',
             )
         ),
+        */
         array(
             'title' => 'FoodRoute',
             'type' => 'social media platform',
@@ -172,13 +172,13 @@
         ),
         array(
             'title' => 'SalesZ&uuml;m',
-            'type' => 'sales platform',
+            'type' => 'sales presentation platform',
             'thumbnail' => 'saleszum_1.jpg',
             'dates' => '2009-2010',
             'technologies' => 'PHP, Symfony 1.0, MySQL, HTML, jQuery',
             'description' => '
                 <p>
-                    SalesZ&uuml;m was a presentation builder developed for Spitball Media. Users could manage a sales team, a collection of assets like video, slideshows, and documents, and put it all together in a custom, secure application.  This startup did not quite make it off the ground.
+                    SalesZ&uuml;m was a presentation builder developed for Spitball Media. Users could manage a sales team, a collection of assets like videos, slideshows, and documents, and put it all together in a custom, secure application.  This startup did not quite make it off the ground.
                 </p>',
             'links' => array(
             ),
@@ -236,7 +236,7 @@
             'technologies' => 'PHP, MySQL, Zend 1.0, HTML5, LESS, jQuery, Raphael, d3',
             'description' => '
                 <p>
-                    Visualize your social media life.  This application reached out to Twitter, Youtube, and Facebook to retrieve your posts, likes, videos, tweets, and other generated content, analyzed it, and spit out a fancy infographic which could be shared.
+                    Visualize your social media life.  This application reached out to Twitter, YouTube, and Facebook to retrieve your posts, likes, videos, tweets, and other generated content, analyzed it, and produced a fancy infographic which could be shared.
                 </p>',
             'links' => array(
                 array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/whatAboutMe.php'),
@@ -251,7 +251,7 @@
             'type' => 'e-commerce solution',
             'thumbnail' => 'altrider_1.jpg',
             'dates' => '2008-2010',
-            'technologies' => 'symfony, PHP, MySQL, XHTML, CSS, jQuery',
+            'technologies' => 'Symfony 1.0, PHP, MySQL, XHTML, CSS, jQuery',
             'description' => '<p>
                     AltRider.com was one of those dream projects where I had complete control over the technologies used. AltRider needed a completely custom, data-driven ecommerce application. We were fortunate to begin with mockups designed by Hansen Belyea up in Seattle.
                 </p>
@@ -317,18 +317,18 @@
                             I speak in plain English to help bring understanding of technical solutions to clients and stakeholders.
                         </p>
                         <p>
-                            I want to contribute positively to the world with my skills, so I care about my project's subject matter and the missions of my clients.
+                            I want to contribute positively to the world with my skills, so I care about my projects' subject matter and the missions of my clients.
                         </p>
                     </div>
                     <div class="col-sm-6">
                         <h2>I offer...</h2>
                         <dl>
                             <dt>Responsive Templating</dt>
-                            <dd>using HTML5, Coffeescript, SASS/CSS3, and grid systems.</dd>
+                            <dd>using HTML5, CoffeeScript, SASS/CSS3, and grid systems.</dd>
                             <dt>Client-side Development</dt>
                             <dd>using Backbone, Bootstrap, and Grunt (to name a few!).</dd>
                             <dt>Server-Side Development</dt>
-                            <dd>using MVC frameworks like Zend, CakePHP, Slim, Symfony, and Yii to create services and administrative tools.</dd>
+                            <dd>using MVC frameworks like Zend, CakePHP, and Yii to create services and administrative tools.</dd>
                             <dt>Application Architecture</dt>
                             <dd>from database design to functional specifications.</dd>
                         </dl>
@@ -434,7 +434,7 @@
                 </p>
                 <p class="text-muted">
                     <small>
-                        &copy; 2013 Candace Fox Camarillo 
+                        &copy; Candace Fox Camarillo 
                     </small>
                 </p>
             </div>
