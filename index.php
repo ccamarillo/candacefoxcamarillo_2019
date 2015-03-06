@@ -3,6 +3,57 @@
     $projects = array(
         
         array(
+            'title' => 'The Bully Project Mural',
+            'type' => 'API-driven Responsive Website',
+            'thumbnail' => 'bully_thumb.jpg',
+            'dates' => '2014',
+            'technologies' => 'Backbone.js, HTML5, SASS, Behance API',
+            'description' => '
+                <p>
+                    Designed to support Adobe\'s partnership with <a href="http://thebullyproject.com" target="new">The Bully Project</a>, this collaborative experience features the work of artists from around the world.  The centerpiece of the site is a mosaic of featured artists\' works designed to form the anti-bullying logo.  These 16 pieces remain centered within the experience at all times.  This Backbone.js application ingests data from Behance.com, and was showcased at Adobe MAX 2014.  <a href="https://www.youtube.com/watch?v=21wzcLTKePc&feature=youtu.be#t=35m28s" target="new">Watch video of the unveiling.</a>
+                </p>',
+            'links' => array(
+                array('type' => 'live', 'url' => 'http://thebullyprojectmural.com'),
+            ),
+            'screenshots' => array(
+                'bully_combined.jpg',
+            )
+        ),
+        array(
+            'title' => 'Diller Teen Fellows',
+            'type' => 'Multilanguage Website',
+            'thumbnail' => 'dtf_thumb.jpg',
+            'dates' => '2014',
+            'technologies' => 'ExpressionEngine, Foundation, HTML5, SASS, Coffeescript',
+            'description' => '
+                <p>
+                    One of the more interesting challenges of this website was the required support for both English and Hebrew, which reads right-to-left.  This affects not only text but general design.    
+                </p>',
+            'links' => array(
+                array('type' => 'live', 'url' => 'http://dillerteenfellows.org'),
+            ),
+            'screenshots' => array(
+                'dtf_full.jpg',
+            )
+        ),
+        array(
+            'title' => 'Exterro.com',
+            'type' => 'CMS-Driven Website and Blog',
+            'thumbnail' => 'exterro_thumb.jpg',
+            'dates' => '2014',
+            'technologies' => 'Craft CMS, Bootstrap, Twig, HTML5, SASS, Coffeescript',
+            'description' => '
+                <p>
+                    A responsive website for an E-Discovery software suite.  My first adventure with Craft CMS.
+                </p>',
+            'links' => array(
+                array('type' => 'live', 'url' => 'http://exterro.com'),
+            ),
+            'screenshots' => array(
+                'exterro_full.jpg',
+            )
+        ),
+        array(
             'title' => 'mBytes',
             'type' => 'hybrid mobile app',
             'thumbnail' => 'mbytes_1.jpg',
@@ -10,7 +61,7 @@
             'technologies' => 'PHP, Yii, MySQL, jQuery, Backbone.js, HTML5, SASS, Icenium',
             'description' => '
                 <p>
-                    Built for iOS and Android and supporting a range of devices sizes, this mobile app distributes sales materials to users, with automatic updating and offline access.  All content is hosted on a web service (built with LAMP stack and Yii) and is distributed to users when they are online.  User account information and metrics are sent back to the webservice.  The mobile app itself is built in HTML5 using the Backbone.js framework.  The webservice provides a REST API, with models saved into Local Storage on the user\'s device.
+                    Built for iOS and Android and supporting a range of device sizes, this mobile app distributes sales materials to users, with automatic updating and offline access.  All content is hosted on a web service (built with LAMP stack and Yii) and is distributed to users when they are online.  User account information and metrics are sent back to the webservice.  The mobile app itself is built in HTML5 using the Backbone.js framework.  The webservice provides a REST API, with models saved into Local Storage on the user\'s device.
                 </p>',
             'links' => array(
                 array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/mBytes.js'),
@@ -55,6 +106,7 @@
                 'analytics_2.png',
             )
         ),
+        /*
         array(
             'title' => 'Big Data Dashboard',
             'type' => 'data visualization',
@@ -74,6 +126,7 @@
                 'bigdata3.png',
             )
         ),
+        */
         array(
             'title' => 'Chamber Music Northwest',
             'type' => 'data-driven website',
@@ -125,7 +178,7 @@
             'technologies' => 'PHP, Symfony 1.0, MySQL, HTML, jQuery',
             'description' => '
                 <p>
-                    SalesZum was a presentation builder developed for Spitball Media. Users could manage a sales team, a collection of assets like video, slideshows, and documents, and put it all together in a custom, secure application.  This startup did not quite make it off the ground.
+                    SalesZ&uuml;m was a presentation builder developed for Spitball Media. Users could manage a sales team, a collection of assets like video, slideshows, and documents, and put it all together in a custom, secure application.  This startup did not quite make it off the ground.
                 </p>',
             'links' => array(
             ),
@@ -146,7 +199,7 @@
             'technologies' => 'HTML5, jQuery, LESS',
             'description' => '
                 <p>
-                    This product showcase featured a custom parallax animation. The live site has not been maintained &mdash; best viewed in Firefox.
+                    This product showcase featured a custom parallax animation. The live site has not been maintained for modern browsers &mdash; best viewed in Firefox.
                 </p>',
             'links' => array(
                 array('type' => 'sample', 'url' => 'https://github.com/ccamarillo/codeSamples/blob/master/transformer.js'),
@@ -256,7 +309,7 @@
             <div class="container active" id="welcome">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2>I create compelling, elegant, and beautiful solutions using modern web technologies.</h2>
+                        <h2>I create well-crafted solutions using modern web technologies.</h2>
                         <p class="first-child">
                              I am collaborative, process-oriented, detail-oriented, and patient. I make a great cheerleader and team player.
                         </p>
@@ -271,9 +324,9 @@
                         <h2>I offer...</h2>
                         <dl>
                             <dt>Responsive Templating</dt>
-                            <dd>using HTML5, jQuery, SASS/CSS3, and grid systems.</dd>
+                            <dd>using HTML5, Coffeescript, SASS/CSS3, and grid systems.</dd>
                             <dt>Client-side Development</dt>
-                            <dd>using Backbone, Twitter Bootstrap, and Kendo UI (to name a few!).</dd>
+                            <dd>using Backbone, Bootstrap, and Grunt (to name a few!).</dd>
                             <dt>Server-Side Development</dt>
                             <dd>using MVC frameworks like Zend, CakePHP, Slim, Symfony, and Yii to create services and administrative tools.</dd>
                             <dt>Application Architecture</dt>
