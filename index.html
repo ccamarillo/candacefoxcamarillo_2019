@@ -1,0 +1,447 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Candace Camarillo - Software Design & Engineering</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rufina&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="header">
+                    <p class="d-sm-block">
+                        <a href="#" class="contactLink">Contact</a> &nbsp;/&nbsp; <a href="#" class="projectsLink">Projects</a> &nbsp;/&nbsp; <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a> &nbsp;/&nbsp; <img id="github" src="img/github.png" />
+                    </p>
+                    <h3>Candace&nbsp;Camarillo <span>Software&nbsp;Design&nbsp;&amp;&nbsp;Engineering</span></h3>
+                </div>
+            </div>    
+        </nav>
+
+        <div class="jumbotron">
+            <div class="container active" id="welcome">
+                <div class="row">
+                    
+                    <div class="col-sm-2">
+                        
+                        <!-- <img id="candace" src="img/candace.png" /> -->
+                    </div>
+                    
+                    <div class="col-sm-8">
+                        <div class="centered">
+                            <h2>My name is Candace and<br />I build software.</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, recusandae cum quas veritatis eveniet suscipit non debitis minima error rerum? Obcaecati eum ipsa dignissimos quos eius nihil doloremque delectus earum?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, recusandae cum quas veritatis eveniet suscipit non debitis minima error rerum? Obcaecati eum ipsa dignissimos quos eius nihil doloremque delectus earum?
+                            </p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <!-- <div class="container" id="contact">
+                <button type="button" class="close" aria-hidden="true">&times;</button>
+                <div id="contactForm">
+                    <h2>Get in touch.</h2>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSex8qfuJNk3lo4oJ0Ulu2TctgLlf-DVF3jzYOWaeNojX0-7wg/viewform?embedded=true" width="640" height="702" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <form role="form">
+                        <div class="formError"></div>
+                      <div class="form-group">
+                        <input type="email" required class="form-control" id="email" placeholder="Your email address">
+                      </div>
+                      <div class="form-group">
+                        <textarea required class="form-control" id="message" placeholder="Your message"></textarea>
+                      </div>
+                      <button id="submitButton" type="submit" class="btn btn-default">Send Message</button>
+                      <img src="img/ajax-loader.gif" alt="working..." class="spinner" />
+                    </form>
+                </div>
+                <div id="thankyouMessage">
+                    <h2>Thank you!</h2>
+                </div>
+            </div> -->
+
+            <!--
+            <div class="container" id="slideshow">
+                <div class="clearfix">
+                    <button type="button" class="close closeSlideshow" aria-hidden="true">&times;</button>
+                    <a href="#projectsSlideshow" data-slide="next" class="pull-right navArrow right"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a href="#projectsSlideshow" data-slide="prev" class="pull-right navArrow left"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                </div>
+
+                <div id="projectsSlideshow" class="carousel slide projectsSlideshow">
+                    <div class="carousel-inner">
+
+                        <?php $projectCounter = 0; ?>
+                        <?php foreach ($projects as $project) { ?>
+                            <div class="project item <?php if ($projectCounter == 0) { ?>active<?php } ?>">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-7">
+                                        <h3><?php echo $project['title']; ?></h3>
+                                        <p class="dates"><?php echo $project['dates']; ?></p>
+                                        <p class="technologies"><?php echo $project['technologies']; ?></p>
+                                        <div class="description">
+                                            <?php echo $project['description']; ?>
+                                        </div>
+                                        <div class="links">
+                                            <?php foreach($project['links'] as $link) { ?>
+                                                <a href="<?php echo $link['url']; ?>" target="<?php echo $link['type']; ?>"><span class="<?php echo $link['type']; ?>"></span> <?php if ($link['type'] == 'live') { ?>Live Site<?php } else { ?>Code Sample<?php } ?></a>
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-5">
+                                        <div class="screenshots">
+                                            <?php foreach($project['screenshots'] as $screenshot) { ?>
+                                                <img src="img/screenshots/<?php echo $screenshot; ?>" alt="<?php echo $project['title']; ?>" />    
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php $projectCounter ++ ; ?>
+                        <?php } ?>
+                    </div>
+                </div>
+
+            </div>
+            -->
+
+        </div>
+
+        <!-- <aside>
+            <div class="container">
+                <div class="row">
+                        <div class="col-sm-9">
+                            <h2>More about me!</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus tenetur, eos ex itaque id temporibus quo, saepe, optio quasi nam voluptatem esse? Quasi veritatis eos earum libero suscipit autem!
+                            </p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img id="candace" src="img/candace.png" alt="Candace" />
+                        </div>
+                </div>
+            </div>
+        </aside> -->
+
+        <div class="jumbotron dark-jumbotron">
+            <div class="container">
+                <h2>I have a broad and deep skillset.</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit perferendis est illum asperiores atque minus quo saepe veritatis exercitationem? Inventore, fuga. Nihil accusamus facilis cumque ut iure quam optio.
+                </p>
+                <!-- <h2>Skillset</h2> -->
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <h3>Languages</h3>
+                        <p>
+                            <a class="badge badge-pill badge-light">Python</a>
+                            <a class="badge badge-pill badge-light">PHP</a>
+                            <a class="badge badge-pill badge-light">Javascript</a>
+                            <a class="badge badge-pill badge-light">regex</a>
+                            <a class="badge badge-pill badge-light">CSS</a>
+                            <a class="badge badge-pill badge-light">HTML</a>
+                            <a class="badge badge-pill badge-light">SASS</a>
+                            <a class="badge badge-pill badge-light">Coffeescript</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <h3>Libraries</h3>
+                        <p>
+                            <a class="badge badge-pill badge-light">Django</a>
+                            <a class="badge badge-pill badge-light">Laravel</a>
+                            <a class="badge badge-pill badge-light">Lumen</a>
+                            <a class="badge badge-pill badge-light">Vue</a>
+                            <a class="badge badge-pill badge-light">Backbone</a>
+                            <a class="badge badge-pill badge-light">Node</a>
+                            <a class="badge badge-pill badge-light">CakePHP</a>
+                            <a class="badge badge-pill badge-light">Yii</a>
+                            <a class="badge badge-pill badge-light">Zend</a>
+                            <a class="badge badge-pill badge-light">Craft</a>
+                            <a class="badge badge-pill badge-light">Wordpress</a>
+                            <a class="badge badge-pill badge-light">Symfony</a>
+                            <a class="badge badge-pill badge-light">D3</a>
+                            <a href="https://click.palletsprojects.com/en/7.x/" target="new" class="badge badge-pull badge-light">Click</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <h3>Databases</h3>
+                        <p>
+                            <a class="badge badge-pill badge-light">MySQL</a>
+                            <a class="badge badge-pill badge-light">Redis</a>
+                            <a class="badge badge-pill badge-light">Postgres</a>
+                            <a class="badge badge-pill badge-light">Neo4j</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <h3>Ops</h3>
+                        <p>
+                            <a class="badge badge-pill badge-light">Docker</a>
+                            <a class="badge badge-pill badge-light">Linux</a>
+                            <a class="badge badge-pill badge-light">Git</a>
+                            <a href="https://serverless.com/" target="new" class="badge badge-pill badge-light">serverless</a>
+                            <a class="badge badge-pill badge-light">AWS Lambda</a>
+                            <a class="badge badge-pill badge-light">AWS S3</a>
+                            <a class="badge badge-pill badge-light">AWS Cloudfront</a>
+                            <a class="badge badge-pill badge-light">AWS SQS</a>
+                            <a class="badge badge-pill badge-light">AWS CloudWatch</a>
+                            <a class="badge badge-pill badge-light">SumoLogic</a>
+                            <a class="badge badge-pill badge-light">Datadog</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <h3>Software Design</h3>
+                        <p>
+                            <a class="badge badge-pill badge-light">scalable</a>
+                            <a class="badge badge-pill badge-light">test-driven</a>
+                            <a class="badge badge-pill badge-light">i18n</a>
+                            <a class="badge badge-pill badge-light">API</a>
+                            <a class="badge badge-pill badge-light">database</a>
+                            <a class="badge badge-pill badge-light">object-oriented</a>
+                            <a class="badge badge-pill badge-light">RESTful</a>
+                            <a class="badge badge-pill badge-light">json:api</a>
+                            <a class="badge badge-pill badge-light">UML</a>
+                            <a class="badge badge-pill badge-light">ORM</a>
+                            <a class="badge badge-pill badge-light">MVC</a>
+                            <a class="badge badge-pill badge-light">security</a>
+                            <a class="badge badge-pill badge-light">semantic versioning</a>
+                            <a class="badge badge-pill badge-light">release management</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <h3>Graphic Design</h3>
+                        <p>
+                            <a class="badge badge-pill badge-light">interface</a>
+                            <a class="badge badge-pill badge-light">UX</a>
+                            <a class="badge badge-pill badge-light">mobile-first</a>
+                            <a class="badge badge-pill badge-light">responsive</a>
+                            <a class="badge badge-pill badge-light">typography</a>
+                            <a class="badge badge-pill badge-light">color theory</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <h3>Project Management</h3>
+                        <p>
+                            <a class="badge badge-pill badge-light">team leadership</a>
+                            <a class="badge badge-pill badge-light">tech leadership</a>
+                            <a class="badge badge-pill badge-light">mentorship</a>
+                            <a class="badge badge-pill badge-light">Scrum</a>
+                            <a class="badge badge-pill badge-light">Kanban</a>
+                            <a class="badge badge-pill badge-light">Jira</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                            <h3>Tools</h3>
+                            <p>
+                                <a class="badge badge-pill badge-light">VSCode</a>
+                                <a class="badge badge-pill badge-light">Sketch</a>
+                                <a class="badge badge-pill badge-light">Photoshop</a>
+                                <a class="badge badge-pill badge-light">Illustrator</a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h2>I've learned by doing.</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="project">
+                            <h3>The Bully Project Mural</h3>
+                            <p>
+                                <a href="http://thebullyprojectmural.com" target="new">Visit Website</a>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                        </div>
+                        <div class="project">
+                            <h3>Vacasa Connect</h3>
+                            <p>
+                                <a href="http://connect.vacasa.com" target="new">View Documentation</a>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                        </div>
+                        <div class="project">
+                            <h3>Tax 1099 Generator</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="project">
+                            <h3>Vacasa Units API</h3>
+                            <p>
+                                <a href="http:units.vacasa.io" target="new">View Documentation</a>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                        </div>
+                        <div class="project">
+                            <h3>Exterro.com</h3>
+                            <p>
+                                <a href="http://exterro.com" target="new">Visit Website</a>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                            </p>
+                        </div>
+                        <div class="project">
+                                <h3>EntityModel ORM</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil, delectus doloribus quos possimus tenetur a iusto ea expedita numquam repellendus accusantium eligendi natus repellat sed harum perferendis maiores ex.
+                                </p>
+                            </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="jumbotron dark-jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2 class="centered">Get in touch.</h2>
+                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSex8qfuJNk3lo4oJ0Ulu2TctgLlf-DVF3jzYOWaeNojX0-7wg/viewform?embedded=true" width="640" height="702" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+                        <form class="ajaxForm" id="new-contact" action="https://formcarry.com/s/Q6yhhGiea22" method="POST" id="mG61Hd">
+                            <div class="form-row">
+                                    
+                                <div class="col">
+                                    <input name="name" type="text" class="form-control form-control-lg" placeholder="Your name" />
+                                </div>
+                                <div class="col">
+                                    <input name="email" type="email" class="form-control" placeholder="Your email" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <textarea name="message" class="form-control" placeholder="Your message" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Do it!</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <div class="jumbotron" id="thumbnailJumbo">
+            <div class="container thumbnails">
+                <h2>Explore some of my work.</h2>
+                <div class="row">
+
+                    <?php foreach($projects as $project) { ?>
+                        <div class="thumbWrapper col-sm-3 col-xs-6">
+                            <div class="thumbnail">
+                                <div class="description">
+                                    <?php echo $project['title']; ?>
+                                    <span><?php echo $project['type']; ?></span>
+                                </div>
+                                <img src="img/screenshots/<?php echo $project['thumbnail']; ?>" alt="<?php echo $project['title']; ?>" />
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron trees thin"></div>
+    -->
+        <footer>
+            <div class="container">
+                <p class="pull-right">
+                    <small>
+                        <a href="#" class="contactLink">Contact</a> &nbsp;/&nbsp; <a href="#" class="projectsLink">Projects</a> &nbsp;/&nbsp; <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a>
+                    </small>
+                </p>
+                <p class="text-muted">
+                    <small>
+                        &copy; 2019 Candace Camarillo 
+                    </small>
+                </p>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
