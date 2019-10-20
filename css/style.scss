@@ -23,6 +23,8 @@ $blue-grey: #46536d;
 $navColor: brown;
 $formColor: $blue;
 
+$background-image: url('../img/leaves.png');
+
 @import "bootstrap";
 
 $font: 'Lato', sans-serif;
@@ -67,12 +69,32 @@ $easeIn: cubic-bezier(0.550, 0.085, 0.680, 0.530);
   }
 }
 
+.container {
+	.body-md & {
+		padding: 2em;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.modal-dialog {
+		left: 0%;
+	}
+}
+
+
 body { 
 	padding-top: 125px;
-	background-color: $cream;
-	background-image: url('../img/leaves.png');
+	background-color: $blue;
+	background-image: $background-image;
 	background-attachment: fixed;
 	font-family: $font;
+}
+
+a.anchor {
+	display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { 
@@ -80,9 +102,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	visibility: hidden;
 }
 
+h3 {
+	font-size: 20px;
+}
+
 .fadeIn {
 	animation: 1s fadeIn;
 	animation-fill-mode: forwards;
+}
+
+.hidden {
+	display: none !important;
 }
 
 .centered {
@@ -102,6 +132,10 @@ h2 {
 	margin-top: 0px;
 	font-family: 'Yeseva One', serif;
 	font-size: 40px;
+
+	.body-xs & {
+		font-size: 26px;
+	}
 }
 p { 
 	visibility: hidden; // hidden on initial load
@@ -120,6 +154,48 @@ dt {
 	font-weight: lighter;
 	font-family: 'Yeseva One', serif;
 	color: $faded-blue;
+}
+
+.modal-backdrop.show {
+	background-color: $blue;
+	opacity: 0;
+}
+
+body.modal-open {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal-content {
+	background-color: $cream;
+	color: $white;
+
+	p {
+		color: $blue;
+	}
+
+	button {
+		background-color: $pink;
+		color: $white;
+
+		&:hover, &:active {
+			background-color: $faded-pink;
+			color: $white;
+			border: 1px solid $faded-pink;
+		}
+	}
+
+	.padding { 
+		margin: 2em;
+		background-color: $cream;
+	}
+}
+
+.modal-footer {
+	border-top: 0px;
+	text-align: center !important;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 
 .header {
@@ -142,8 +218,15 @@ dt {
 	background-color: $cream;
 	border-bottom: 0px;
 	@extend %light-drop-shadow;
+	.container { 
+		padding: 0px;
+	}
 	h3 { 
-		// cursor: pointer;
+
+		.body-sm &, .body-xs & {
+			font-size: 16px;
+		}
+
 		color: $blue;
 		font-family: 'Yeseva One', serif;
 		font-size: 23px;
@@ -155,34 +238,93 @@ dt {
 			font-family: $font-family;
 			color: $blue;
 			font-size: 19px;
-		}
-	}
 
-	
-	p { 
-		margin-top: 2em;
-		margin-bottom: 0px;
-		float: right;
-		a:first-child { 
-			margin-left: 2em;
-		}
-		@media (max-width: 417px) { 
-			float: none;
-			margin-top: 1em;
-			a:first-child { 
-				margin-left: 0px;
-
+			.body-sm &, .body-xs & {
+				font-size: 16px;
 			}
 		}
 
-		img#github {
-			width: 20px;
+		a {
+			color: inherit;
+			&:hover {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+	}
+
+
+	#text-menu {
+		.body-sm &, .body-xs & {
+			display: none;
+		}
+		.body-md &, .body-lg &, .body-xl & {
+			display: block;
+		} 
+
+		p { 
+			margin-top: 2em;
+			margin-bottom: 0px;
+			float: right;
+			a:first-child { 
+				margin-left: 2em;
+			}
+	
+			.body-sm & {
+				float: none;
+				margin-top: 1em;
+				a:first-child { 
+					margin-left: 0px;
+	
+				}
+				display: none;
+			}
+		}
+		.icon {
+			color: $blue;
+			&:hover {
+				color: $faded-blue;
+			}
+		}
+	}
+
+	.icon {
+		color: $blue;
+		&:hover {
+			color: $faded-blue;
+		}
+	}
+
+	#hamburger-menu {
+		text-align: right;
+		display: none;
+		font-size: 25px;
+		margin-top: 16px;
+		color: $pink;
+		cursor: pointer;
+		&:hover {
+			color: $faded-pink;
+		}
+		.body-sm &, .body-xs & {
+			display: block;
+		}
+		.body-md &, .body-lg &, .body-xl & {
+			display: none;
+		} 
+		p {
+			line-height: 35px;
+		}
+		.icon {
+			color: $blue;
 		}
 	}
 }
 
+#navbarToggleExternalContent {
+	display: none;
+}
+
 aside { 
-	//background-image: url('../img/leaves.png');
 	clear: both;
 	padding: 2em 0 2em 0;
 	.container { 
@@ -192,7 +334,6 @@ aside {
 }
 
 .trees { 
-	//background-image: url('../img/leaves.png');
 	background-attachment: fixed;
 	padding: 0px;
 	height: 3.5em;
@@ -219,6 +360,14 @@ aside {
 		margin: 0px auto 0px auto;
 		padding-top: 3em;
 		padding-bottom: 3em;
+
+		.body-xs & {
+			// padding-top: 2.5em;
+			// padding-bottom: 2.5em;
+			// pa
+			padding: 2em;
+		}
+
 		&.aside {
 			background-color: $cream;
 		}
@@ -234,12 +383,18 @@ aside {
 
 .dark-jumbotron { 
 	background-color: $blue;
-	//margin-top: 2em;
+	&.clear {
+		background-color: transparent;
+		.container {
+			background-color: $blue;
+			margin-top: 2em;
+			@extend %medium-drop-shadow;
+		}
+	}
 	h2 {
 		color: $cream;
 	}
 	h3 {
-		// color: $faded-blue;
 		color: $cream;
 		font-family: $font-family;
 		font-weight: 100;
@@ -257,150 +412,63 @@ aside {
 	}
 }
 
-#thumbnailJumbo { 
-	background-color: white;
-	margin: 0px;
-	//padding: 70px;
-	h2 { 
-		margin-top: 1em;
-	}
-}
-
 .project {
 	padding-bottom: 1em;
 }
 
-#slideshow { 
-	display: none;
-	.close { 
-		margin-bottom: 1em;
-	}
-	.navArrow { 
-		line-height: 14px;
-		margin-right: 1em;
-		cursor: pointer;
-		span { 
-			padding-top: 2px;
-			font-size: 14px;
-		}
-	}
-	.project { 
-		
-		h3 { 
-			color: $yellow;
-			font-weight: lighter;
-			margin-top: 0px;
-		}
-		.dates { 
-			color: $brown;
-			font-size: 13px;
-		}
-		.technologies { 
-			font-style: italic;
-			font-weight: normal;
-			font-size: 13px;
-		}
-		.description { 
-			font-size: 17px;
-		}
-		img { 
-			max-width: 100%;
-			max-height: 400px;
-		}
-
-		.links { 
-			margin-bottom: 1em;
-			a { 
-				@extend .btn;
-				@extend .btn-default;
-				margin-right: 5px;
-				.live, .sample { 
-					@extend .glyphicon;
-				}
-				.live {
-					@extend .glyphicon-globe;
-				}
-				.sample { 
-					@extend .glyphicon-align-left;
-				}
-			}
-		}
-		.screenshots { 
-			img { 
-				&.active { 
-
-					display: block;
-				}
-			}
-		}
-		
-	}
-}
-
 form#new-contact {
 	textarea {
-		height: 100px;	
+		height: 150px;	
 	}
-}
 
-// #contact { 
-// 	display: none;
-// 	#thankyouMessage { 
-// 		display: none;
-// 	}
-// 	&.active { 
-// 		display: block;
-// 	}
-// 	label.error, .formError { 
-// 		font-weight: normal;
-// 		color: #ffe63a;
-// 		font-size: 15px;
-// 		font-style: italic;
-// 		position: relative;
-// 		top: -10px;
-// 	}
-// 	input, textarea { 
-// 		&.error { 
-// 			border: 3px solid #ffe63a;
-// 		}
-// 	}
-// 	.spinner { 
-// 		width: 20px;
-// 		height: 20px;
-// 		margin-left: 5px;
-// 		display: none;
-// 		&.active { 
-// 			display: inline;
-// 		}
-// 	}
-// 	.formError { 
-// 		display: none;
-// 		&.active { 
-// 			display: block;
-// 		}
-// 	}
-// }
+	button {
+		width: 220px;
+		margin-top: 2em;
+	}
+
+	button.done {
+		background-color: $faded-blue;
+		border: 1px solid $faded-blue;	
+	}
+
+}
 
 .form-control {
 	margin: 5px;
-	// background-color: $faded-blue;
 	background-color: $cream;
 	border-color: $faded-blue;
 	color: $blue;		
 }
 
+input.form-control, textarea.form-control { 
+	padding: 16px !important;
+	font-size: 17px;
+	font-weight: lighter;
+}
+
+input.form-control {
+	height: 40px;
+}
+
 input::placeholder, textarea::placeholder {
-	// color: $blue !important;
-	color: $faded-blue !important;
+	color: $pink !important;
 }
 
 input:focus, textarea:focus {
 	background-color: $cream !important;	
 }
 
+input, textarea {
+	&.invalid {
+		border: 5px solid $pink;
+	}
+}
+
 .btn-primary {
 	background-color: $pink;
 	border-color: $pink;
+	margin-top: 10px;
+	font-size: 17px;
 
 	&:hover {
 		background-color: $faded-pink;
@@ -411,6 +479,15 @@ footer {
 	background-color: $cream;
 	padding: 10px;
 	margin-top: 3em;
+	text-align: center;
+
+	p {
+		margin-bottom: 0px;
+	}
+
+	.icon {
+		color: $blue
+	}
 }
 
 .thumbnails { 
@@ -452,10 +529,7 @@ footer {
 				margin-top: 5px;
 			}
 		}
-		img { 
-			//@include animate(opacity, 150ms, $easeIn);
-			//opacity: 1;
-		}
+
 		&:hover { 
 			padding: 0px;
 			border: 0px;
@@ -465,10 +539,8 @@ footer {
 
 			.description { 
 				opacity: 1;
-				//@include animate(opacity, 150ms, $easeIn);
 			}
 			img {
-				//@include animate(opacity, 150ms, $easeIn);
 				opacity: 0;
 			}
 		}
@@ -485,13 +557,6 @@ footer {
 	
 }
 
-.carousel { 
-	margin-bottom: 1em;
-	.item { 
-		//max-height: 400px;
-	}
-}
-
 .btn-default:hover { 
 	background-color: $green;
 	border-color: $green;
@@ -499,10 +564,12 @@ footer {
 }
 
 #candace {
-	width: 100%;
-	border: 12px solid $blue;
+	width: 80px;
+	border: 5px solid $blue;
 	transform: rotate(-5deg);
 	@extend %medium-drop-shadow;
+	float: left;
+	display: inline;
 }
 
 .badge-light {
@@ -511,11 +578,5 @@ footer {
 	&:hover {
 		color: $blue !important;
 		background-color: $faded-pink !important;
-	}
-}
-
-.carousel {
-	a[role=button] {
-		
 	}
 }

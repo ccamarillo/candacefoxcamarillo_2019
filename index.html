@@ -12,28 +12,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Roboto+Mono&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Rufina&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="https://kit.fontawesome.com/3feff1d927.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+        <a class="anchor" id="home"></a>
+        <div id="contact-error" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="padding">
+                                <div class="modal-body">
+                                    <h2 class="centered">Hold on....</h2>
+                                    <p>
+                                        Please allow 15 seconds between form submissions.
+                                    </p>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="header">
-                    <p class="d-sm-block">
-                        <a href="#" class="contactLink">Contact</a> &nbsp;/&nbsp; <a href="#" class="projectsLink">Projects</a> &nbsp;/&nbsp; <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a> &nbsp;/&nbsp; <img id="github" src="img/github.png" />
-                    </p>
-                    <h3>Candace&nbsp;Camarillo <span>Software&nbsp;Design&nbsp;&amp;&nbsp;Engineering</span></h3>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-6">
+                            <h3>
+                                <a href="#home">
+                                    Candace&nbsp;Camarillo <span>Software&nbsp;Design&nbsp;&amp;&nbsp;Engineering</span>
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="text-menu" class="col-md-7 col-sm-6 col-xs-6">
+                            <p class="d-sm-block">
+                                <a href="#skills" class="contactLink">Skills</a> &nbsp;/&nbsp; 
+                                <a href="#projects" class="projectsLink">Projects</a> &nbsp;/&nbsp;
+                                <a href="#contact" class="contactLink">Contact</a> &nbsp;/&nbsp; 
+                                <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a> &nbsp;/&nbsp; 
+                                <a href="http://github.com" target="new"><i class="icon fab fa-github"></i></a> &nbsp;/&nbsp;
+                                <a href="http://linkedin.com" target="new"><i class="icon fab fa-linkedin"></i></a>
+                            </p> 
+                        </div>
+                        <div id="hamburger-menu" class="col-md-6 col-sm-6 col-xs-6">
+                            <i data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="fas fa-bars"></i>
+                        </div>
+                        <div class="col-sm-12 col-xs-12" class="collapse" id="navbarToggleExternalContent">
+                            <p>
+                                <a href="#skills" class="contactLink">Skills</a> &nbsp;/&nbsp; 
+                                <a href="#projects" class="projectsLink">Projects</a> &nbsp;/&nbsp;
+                                <a href="#contact" class="contactLink">Contact</a> &nbsp;/&nbsp; 
+                                <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a> &nbsp;/&nbsp; 
+                                <a href="http://github.com" target="new"><i class="icon fab fa-github"></i></a> &nbsp;/&nbsp; 
+                                <a href="http://linkedin.com" target="new"><i class="icon fab fa-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>    
         </nav>
@@ -49,7 +93,7 @@
                     
                     <div class="col-sm-8">
                         <div class="centered">
-                            <h2>My name is Candace and<br />I build software.</h2>
+                            <h2>My name is Candace.<br />I build software.</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, recusandae cum quas veritatis eveniet suscipit non debitis minima error rerum? Obcaecati eum ipsa dignissimos quos eius nihil doloremque delectus earum?
                             </p>
@@ -60,95 +104,12 @@
                      </div>
                 </div>
             </div>
-
-            <!-- <div class="container" id="contact">
-                <button type="button" class="close" aria-hidden="true">&times;</button>
-                <div id="contactForm">
-                    <h2>Get in touch.</h2>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSex8qfuJNk3lo4oJ0Ulu2TctgLlf-DVF3jzYOWaeNojX0-7wg/viewform?embedded=true" width="640" height="702" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    <form role="form">
-                        <div class="formError"></div>
-                      <div class="form-group">
-                        <input type="email" required class="form-control" id="email" placeholder="Your email address">
-                      </div>
-                      <div class="form-group">
-                        <textarea required class="form-control" id="message" placeholder="Your message"></textarea>
-                      </div>
-                      <button id="submitButton" type="submit" class="btn btn-default">Send Message</button>
-                      <img src="img/ajax-loader.gif" alt="working..." class="spinner" />
-                    </form>
-                </div>
-                <div id="thankyouMessage">
-                    <h2>Thank you!</h2>
-                </div>
-            </div> -->
-
-            <!--
-            <div class="container" id="slideshow">
-                <div class="clearfix">
-                    <button type="button" class="close closeSlideshow" aria-hidden="true">&times;</button>
-                    <a href="#projectsSlideshow" data-slide="next" class="pull-right navArrow right"><span class="glyphicon glyphicon-chevron-right"></span></a>
-                    <a href="#projectsSlideshow" data-slide="prev" class="pull-right navArrow left"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                </div>
-
-                <div id="projectsSlideshow" class="carousel slide projectsSlideshow">
-                    <div class="carousel-inner">
-
-                        <?php $projectCounter = 0; ?>
-                        <?php foreach ($projects as $project) { ?>
-                            <div class="project item <?php if ($projectCounter == 0) { ?>active<?php } ?>">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-7">
-                                        <h3><?php echo $project['title']; ?></h3>
-                                        <p class="dates"><?php echo $project['dates']; ?></p>
-                                        <p class="technologies"><?php echo $project['technologies']; ?></p>
-                                        <div class="description">
-                                            <?php echo $project['description']; ?>
-                                        </div>
-                                        <div class="links">
-                                            <?php foreach($project['links'] as $link) { ?>
-                                                <a href="<?php echo $link['url']; ?>" target="<?php echo $link['type']; ?>"><span class="<?php echo $link['type']; ?>"></span> <?php if ($link['type'] == 'live') { ?>Live Site<?php } else { ?>Code Sample<?php } ?></a>
-                                            <?php } ?>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-5">
-                                        <div class="screenshots">
-                                            <?php foreach($project['screenshots'] as $screenshot) { ?>
-                                                <img src="img/screenshots/<?php echo $screenshot; ?>" alt="<?php echo $project['title']; ?>" />    
-                                            <?php } ?>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php $projectCounter ++ ; ?>
-                        <?php } ?>
-                    </div>
-                </div>
-
-            </div>
-            -->
-
         </div>
 
-        <!-- <aside>
-            <div class="container">
-                <div class="row">
-                        <div class="col-sm-9">
-                            <h2>More about me!</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus tenetur, eos ex itaque id temporibus quo, saepe, optio quasi nam voluptatem esse? Quasi veritatis eos earum libero suscipit autem!
-                            </p>
-                        </div>
-                        <div class="col-sm-3">
-                            <img id="candace" src="img/candace.png" alt="Candace" />
-                        </div>
-                </div>
-            </div>
-        </aside> -->
-
+        <a class="anchor" id="skills"></a>
         <div class="jumbotron dark-jumbotron">
             <div class="container">
-                <h2>I have a broad and deep skillset.</h2>
+                <h2>I have a broad and deep skillset...</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit perferendis est illum asperiores atque minus quo saepe veritatis exercitationem? Inventore, fuga. Nihil accusamus facilis cumque ut iure quam optio.
                 </p>
@@ -254,22 +215,14 @@
                             <a class="badge badge-pill badge-light">Jira</a>
                         </p>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
-                            <h3>Tools</h3>
-                            <p>
-                                <a class="badge badge-pill badge-light">VSCode</a>
-                                <a class="badge badge-pill badge-light">Sketch</a>
-                                <a class="badge badge-pill badge-light">Photoshop</a>
-                                <a class="badge badge-pill badge-light">Illustrator</a>
-                            </p>
-                        </div>
                 </div>
             </div>
         </div>
 
+        <a class="anchor" id="projects"></a>
         <div class="jumbotron">
             <div class="container">
-                <h2>I've learned by doing.</h2>
+                <h2>...and a lot of experience. </h2>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="project">
@@ -345,32 +298,32 @@
             </div>
         </div>
 
-        <div class="jumbotron dark-jumbotron">
+        <a class="anchor" id="contact"></a>
+        <div id="contact" class="jumbotron dark-jumbotron clear">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2">
                     </div>
                     <div class="col-sm-8">
                         <h2 class="centered">Get in touch.</h2>
-                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSex8qfuJNk3lo4oJ0Ulu2TctgLlf-DVF3jzYOWaeNojX0-7wg/viewform?embedded=true" width="640" height="702" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-                        <form class="ajaxForm" id="new-contact" action="https://formcarry.com/s/Q6yhhGiea22" method="POST" id="mG61Hd">
+                        <form class="ajaxForm" id="new-contact" action="https://formcarry.com/s/Q6yhhGiea22" method="POST">
+                            <input type="hidden" name="_gotcha">
                             <div class="form-row">
-                                    
-                                <div class="col">
-                                    <input name="name" type="text" class="form-control form-control-lg" placeholder="Your name" />
+                                <div class="col-12">
+                                    <input name="name" required="true" type="text" class="form-control" placeholder="Your name" />
                                 </div>
-                                <div class="col">
-                                    <input name="email" type="email" class="form-control" placeholder="Your email" />
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <textarea name="message" class="form-control" placeholder="Your message" rows="5"></textarea>
+                                <div class="col-12">
+                                    <input name="email" required="true" type="email" class="form-control" placeholder="Your email" />
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col">
-                                    <button type="submit" class="btn btn-primary">Do it!</button>
+                                    <textarea name="message" required="true" class="form-control" placeholder="Your message" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col centered">
+                                    <button type="submit" class="btn btn-primary">Send a secure message &nbsp;&nbsp;<i class="fas fa-lock"></i></button>
                                 </div>
                             </div>
                         </form>
@@ -379,67 +332,37 @@
             </div>
         </div>
 
-        <div class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <!--
-        <div class="jumbotron" id="thumbnailJumbo">
-            <div class="container thumbnails">
-                <h2>Explore some of my work.</h2>
-                <div class="row">
-
-                    <?php foreach($projects as $project) { ?>
-                        <div class="thumbWrapper col-sm-3 col-xs-6">
-                            <div class="thumbnail">
-                                <div class="description">
-                                    <?php echo $project['title']; ?>
-                                    <span><?php echo $project['type']; ?></span>
-                                </div>
-                                <img src="img/screenshots/<?php echo $project['thumbnail']; ?>" alt="<?php echo $project['title']; ?>" />
-                            </div>
-                        </div>
-                    <?php } ?>
-                </div>
-            </div>
-        </div>
-
-        <div class="jumbotron trees thin"></div>
-    -->
         <footer>
             <div class="container">
-                <p class="pull-right">
-                    <small>
-                        <a href="#" class="contactLink">Contact</a> &nbsp;/&nbsp; <a href="#" class="projectsLink">Projects</a> &nbsp;/&nbsp; <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a>
-                    </small>
-                </p>
-                <p class="text-muted">
-                    <small>
-                        &copy; 2019 Candace Camarillo 
-                    </small>
-                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="text-muted">
+                            <small>
+                                &copy; 2019 Candace Camarillo 
+                            </small>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <small>
+                                <a href="#skills" class="contactLink">Skills</a> &nbsp;/&nbsp; 
+                                <a href="#projects" class="projectsLink">Projects</a> &nbsp;/&nbsp;
+                                <a href="#contact" class="contactLink">Contact</a> &nbsp;/&nbsp; 
+                                <a href="CandaceFoxCamarillo_Resume.pdf" target="resume">R&eacute;sum&eacute;</a> &nbsp;/&nbsp; 
+                                <a href="http://github.com" target="new"><i class="icon fab fa-github"></i></a> &nbsp;/&nbsp; 
+                                <a href="http://linkedin.com" target="new"><i class="icon fab fa-linkedin"></i></a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
             </div>
         </footer>
         
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

@@ -242,7 +242,7 @@ table {
     background-color: #fff !important;
   }
 
-  .btn > .caret, #slideshow .project .links a > .caret, .dropup > .btn > .caret, #slideshow .project .links .dropup > a > .caret {
+  .btn > .caret, .dropup > .btn > .caret {
     border-top-color: #000 !important;
   }
 
@@ -1825,7 +1825,7 @@ textarea.input-lg {
     text-align: right;
   }
 }
-.btn, #slideshow .project .links a {
+.btn {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -1845,25 +1845,25 @@ textarea.input-lg {
   user-select: none;
 }
 
-.btn:focus, #slideshow .project .links a:focus {
+.btn:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.btn:hover, #slideshow .project .links a:hover, .btn:focus, #slideshow .project .links a:focus {
+.btn:hover, .btn:focus {
   color: #333;
   text-decoration: none;
 }
 
-.btn:active, #slideshow .project .links a:active, .btn.active, #slideshow .project .links a.active {
+.btn:active, .btn.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.btn.disabled, #slideshow .project .links a.disabled, .btn[disabled], #slideshow .project .links a[disabled], fieldset[disabled] .btn, fieldset[disabled] #slideshow .project .links a, #slideshow .project .links fieldset[disabled] a {
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   pointer-events: none;
   cursor: not-allowed;
   opacity: 0.65;
@@ -1872,23 +1872,23 @@ textarea.input-lg {
   box-shadow: none;
 }
 
-.btn-default, #slideshow .project .links a {
+.btn-default {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
 }
 
-.btn-default:hover, #slideshow .project .links a:hover, .btn-default:focus, #slideshow .project .links a:focus, .btn-default:active, #slideshow .project .links a:active, .btn-default.active, #slideshow .project .links a.active, .open .dropdown-toggle.btn-default, .open #slideshow .project .links a.dropdown-toggle, #slideshow .project .links .open a.dropdown-toggle {
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
   color: #333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
 
-.btn-default:active, #slideshow .project .links a:active, .btn-default.active, #slideshow .project .links a.active, .open .dropdown-toggle.btn-default, .open #slideshow .project .links a.dropdown-toggle, #slideshow .project .links .open a.dropdown-toggle {
+.btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
   background-image: none;
 }
 
-.btn-default.disabled, #slideshow .project .links a.disabled, .btn-default[disabled], #slideshow .project .links a[disabled], fieldset[disabled] .btn-default, fieldset[disabled] #slideshow .project .links a, #slideshow .project .links fieldset[disabled] a, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
   background-color: #fff;
   border-color: #ccc;
 }
@@ -2090,7 +2090,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
 }
-.glyphicon, #slideshow .project .links a .live, #slideshow .project .links a .sample {
+.glyphicon {
   position: relative;
   top: 1px;
   display: inline-block;
@@ -2317,7 +2317,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   content: "";
 }
 
-.glyphicon-align-left:before, #slideshow .project .links a .sample:before {
+.glyphicon-align-left:before {
   content: "";
 }
 
@@ -2621,7 +2621,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   content: "";
 }
 
-.glyphicon-globe:before, #slideshow .project .links a .live:before {
+.glyphicon-globe:before {
   content: "";
 }
 
@@ -3038,7 +3038,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     left: auto;
   }
 }
-.btn-default .caret, #slideshow .project .links a .caret {
+.btn-default .caret {
   border-top-color: #333;
 }
 
@@ -3046,7 +3046,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   border-top-color: #fff;
 }
 
-.dropup .btn-default .caret, .dropup #slideshow .project .links a .caret, #slideshow .project .links .dropup a .caret {
+.dropup .btn-default .caret {
   border-bottom-color: #333;
 }
 
@@ -3060,20 +3060,20 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   vertical-align: middle;
 }
 
-.btn-group > .btn, #slideshow .project .links .btn-group > a, .btn-group-vertical > .btn, #slideshow .project .links .btn-group-vertical > a {
+.btn-group > .btn, .btn-group-vertical > .btn {
   position: relative;
   float: left;
 }
 
-.btn-group > .btn:hover, #slideshow .project .links .btn-group > a:hover, .btn-group-vertical > .btn:hover, #slideshow .project .links .btn-group-vertical > a:hover, .btn-group > .btn:focus, #slideshow .project .links .btn-group > a:focus, .btn-group-vertical > .btn:focus, #slideshow .project .links .btn-group-vertical > a:focus, .btn-group > .btn:active, #slideshow .project .links .btn-group > a:active, .btn-group-vertical > .btn:active, #slideshow .project .links .btn-group-vertical > a:active, .btn-group > .btn.active, #slideshow .project .links .btn-group > a.active, .btn-group-vertical > .btn.active, #slideshow .project .links .btn-group-vertical > a.active {
+.btn-group > .btn:hover, .btn-group-vertical > .btn:hover, .btn-group > .btn:focus, .btn-group-vertical > .btn:focus, .btn-group > .btn:active, .btn-group-vertical > .btn:active, .btn-group > .btn.active, .btn-group-vertical > .btn.active {
   z-index: 2;
 }
 
-.btn-group > .btn:focus, #slideshow .project .links .btn-group > a:focus, .btn-group-vertical > .btn:focus, #slideshow .project .links .btn-group-vertical > a:focus {
+.btn-group > .btn:focus, .btn-group-vertical > .btn:focus {
   outline: 0;
 }
 
-.btn-group .btn + .btn, .btn-group #slideshow .project .links a + .btn, #slideshow .project .links .btn-group a + .btn, .btn-group #slideshow .project .links .btn + a, #slideshow .project .links .btn-group .btn + a, .btn-group #slideshow .project .links a + a, #slideshow .project .links .btn-group a + a, .btn-group .btn + .btn-group, .btn-group #slideshow .project .links a + .btn-group, #slideshow .project .links .btn-group a + .btn-group, .btn-group .btn-group + .btn, .btn-group #slideshow .project .links .btn-group + a, #slideshow .project .links .btn-group .btn-group + a, .btn-group .btn-group + .btn-group {
+.btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn, .btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
 
@@ -3099,24 +3099,24 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   float: left;
 }
 
-.btn-toolbar > .btn + .btn, #slideshow .project .links .btn-toolbar > a + .btn, #slideshow .project .links .btn-toolbar > .btn + a, #slideshow .project .links .btn-toolbar > a + a, .btn-toolbar > .btn-group + .btn, #slideshow .project .links .btn-toolbar > .btn-group + a, .btn-toolbar > .btn + .btn-group, #slideshow .project .links .btn-toolbar > a + .btn-group, .btn-toolbar > .btn-group + .btn-group {
+.btn-toolbar > .btn + .btn, .btn-toolbar > .btn-group + .btn, .btn-toolbar > .btn + .btn-group, .btn-toolbar > .btn-group + .btn-group {
   margin-left: 5px;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), #slideshow .project .links .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, #slideshow .project .links .btn-group > a:first-child {
+.btn-group > .btn:first-child {
   margin-left: 0;
 }
 
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), #slideshow .project .links .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.btn-group > .btn:last-child:not(:first-child), #slideshow .project .links .btn-group > a:last-child:not(:first-child), .btn-group > .dropdown-toggle:not(:first-child) {
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3125,16 +3125,16 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, #slideshow .project .links .btn-group > .btn-group:not(:first-child):not(:last-child) > a {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child > .btn:last-child, #slideshow .project .links .btn-group > .btn-group:first-child > a:last-child, .btn-group > .btn-group:first-child > .dropdown-toggle {
+.btn-group > .btn-group:first-child > .btn:last-child, .btn-group > .btn-group:first-child > .dropdown-toggle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child > .btn:first-child, #slideshow .project .links .btn-group > .btn-group:last-child > a:first-child {
+.btn-group > .btn-group:last-child > .btn:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3143,7 +3143,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   outline: 0;
 }
 
-.btn-group-xs > .btn, #slideshow .project .links .btn-group-xs > a {
+.btn-group-xs > .btn {
   padding: 5px 10px;
   padding: 1px 5px;
   font-size: 12px;
@@ -3151,21 +3151,21 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   border-radius: 3px;
 }
 
-.btn-group-sm > .btn, #slideshow .project .links .btn-group-sm > a {
+.btn-group-sm > .btn {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
-.btn-group-lg > .btn, #slideshow .project .links .btn-group-lg > a {
+.btn-group-lg > .btn {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
 }
 
-.btn-group > .btn + .dropdown-toggle, #slideshow .project .links .btn-group > a + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle {
   padding-right: 8px;
   padding-left: 8px;
 }
@@ -3180,7 +3180,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.btn .caret, #slideshow .project .links a .caret {
+.btn .caret {
   margin-left: 0;
 }
 
@@ -3193,7 +3193,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   border-width: 0 5px 5px;
 }
 
-.btn-group-vertical > .btn, #slideshow .project .links .btn-group-vertical > a, .btn-group-vertical > .btn-group {
+.btn-group-vertical > .btn, .btn-group-vertical > .btn-group {
   display: block;
   float: none;
   width: 100%;
@@ -3218,41 +3218,41 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   clear: both;
 }
 
-.btn-group-vertical > .btn-group > .btn, #slideshow .project .links .btn-group-vertical > .btn-group > a {
+.btn-group-vertical > .btn-group > .btn {
   float: none;
 }
 
-.btn-group-vertical > .btn + .btn, #slideshow .project .links .btn-group-vertical > a + .btn, #slideshow .project .links .btn-group-vertical > .btn + a, #slideshow .project .links .btn-group-vertical > a + a, .btn-group-vertical > .btn + .btn-group, #slideshow .project .links .btn-group-vertical > a + .btn-group, .btn-group-vertical > .btn-group + .btn, #slideshow .project .links .btn-group-vertical > .btn-group + a, .btn-group-vertical > .btn-group + .btn-group {
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > .btn + .btn-group, .btn-group-vertical > .btn-group + .btn, .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), #slideshow .project .links .btn-group-vertical > a:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn:first-child:not(:last-child), #slideshow .project .links .btn-group-vertical > a:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn:last-child:not(:first-child), #slideshow .project .links .btn-group-vertical > a:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child) {
   border-top-right-radius: 0;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, #slideshow .project .links .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:first-child > .btn:last-child, #slideshow .project .links .btn-group-vertical > .btn-group:first-child > a:last-child, .btn-group-vertical > .btn-group:first-child > .dropdown-toggle {
+.btn-group-vertical > .btn-group:first-child > .btn:last-child, .btn-group-vertical > .btn-group:first-child > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:last-child > .btn:first-child, #slideshow .project .links .btn-group-vertical > .btn-group:last-child > a:first-child {
+.btn-group-vertical > .btn-group:last-child > .btn:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3264,13 +3264,13 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   table-layout: fixed;
 }
 
-.btn-group-justified .btn, .btn-group-justified #slideshow .project .links a, #slideshow .project .links .btn-group-justified a {
+.btn-group-justified .btn {
   display: table-cell;
   float: none;
   width: 1%;
 }
 
-[data-toggle=buttons] > .btn > input[type=radio], #slideshow .project .links [data-toggle=buttons] > a > input[type=radio], [data-toggle=buttons] > .btn > input[type=checkbox], #slideshow .project .links [data-toggle=buttons] > a > input[type=checkbox] {
+[data-toggle=buttons] > .btn > input[type=radio], [data-toggle=buttons] > .btn > input[type=checkbox] {
   display: none;
 }
 
@@ -3291,7 +3291,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   margin-bottom: 0;
 }
 
-.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn, #slideshow .project .links .input-group-lg > .input-group-btn > a {
+.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
   height: 45px;
   padding: 10px 16px;
   font-size: 18px;
@@ -3299,16 +3299,16 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   border-radius: 6px;
 }
 
-select.input-group-lg > .form-control, select.input-group-lg > .input-group-addon, select.input-group-lg > .input-group-btn > .btn, #slideshow .project .links select.input-group-lg > .input-group-btn > a {
+select.input-group-lg > .form-control, select.input-group-lg > .input-group-addon, select.input-group-lg > .input-group-btn > .btn {
   height: 45px;
   line-height: 45px;
 }
 
-textarea.input-group-lg > .form-control, textarea.input-group-lg > .input-group-addon, textarea.input-group-lg > .input-group-btn > .btn, #slideshow .project .links textarea.input-group-lg > .input-group-btn > a {
+textarea.input-group-lg > .form-control, textarea.input-group-lg > .input-group-addon, textarea.input-group-lg > .input-group-btn > .btn {
   height: auto;
 }
 
-.input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn, #slideshow .project .links .input-group-sm > .input-group-btn > a {
+.input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -3316,12 +3316,12 @@ textarea.input-group-lg > .form-control, textarea.input-group-lg > .input-group-
   border-radius: 3px;
 }
 
-select.input-group-sm > .form-control, select.input-group-sm > .input-group-addon, select.input-group-sm > .input-group-btn > .btn, #slideshow .project .links select.input-group-sm > .input-group-btn > a {
+select.input-group-sm > .form-control, select.input-group-sm > .input-group-addon, select.input-group-sm > .input-group-btn > .btn {
   height: 30px;
   line-height: 30px;
 }
 
-textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-addon, textarea.input-group-sm > .input-group-btn > .btn, #slideshow .project .links textarea.input-group-sm > .input-group-btn > a {
+textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-addon, textarea.input-group-sm > .input-group-btn > .btn {
   height: auto;
 }
 
@@ -3366,7 +3366,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
   margin-top: 0;
 }
 
-.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, #slideshow .project .links .input-group-btn:first-child > a, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), #slideshow .project .links .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle) {
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -3375,7 +3375,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
   border-right: 0;
 }
 
-.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, #slideshow .project .links .input-group-btn:last-child > a, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), #slideshow .project .links .input-group-btn:first-child > a:not(:first-child) {
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3389,15 +3389,15 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
   white-space: nowrap;
 }
 
-.input-group-btn > .btn, #slideshow .project .links .input-group-btn > a {
+.input-group-btn > .btn {
   position: relative;
 }
 
-.input-group-btn > .btn + .btn, #slideshow .project .links .input-group-btn > a + .btn, #slideshow .project .links .input-group-btn > .btn + a, #slideshow .project .links .input-group-btn > a + a {
+.input-group-btn > .btn + .btn {
   margin-left: -4px;
 }
 
-.input-group-btn > .btn:hover, #slideshow .project .links .input-group-btn > a:hover, .input-group-btn > .btn:active, #slideshow .project .links .input-group-btn > a:active {
+.input-group-btn > .btn:hover, .input-group-btn > .btn:active {
   z-index: 2;
 }
 
@@ -4429,7 +4429,7 @@ a.badge:hover, a.badge:focus {
   cursor: pointer;
 }
 
-.btn .badge, #slideshow .project .links a .badge {
+.btn .badge {
   position: relative;
   top: -1px;
 }
@@ -5220,12 +5220,12 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
   clear: both;
 }
 
-.modal-footer .btn + .btn, .modal-footer #slideshow .project .links a + .btn, #slideshow .project .links .modal-footer a + .btn, .modal-footer #slideshow .project .links .btn + a, #slideshow .project .links .modal-footer .btn + a, .modal-footer #slideshow .project .links a + a, #slideshow .project .links .modal-footer a + a {
+.modal-footer .btn + .btn {
   margin-bottom: 0;
   margin-left: 5px;
 }
 
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group #slideshow .project .links a + .btn, #slideshow .project .links .modal-footer .btn-group a + .btn, .modal-footer .btn-group #slideshow .project .links .btn + a, #slideshow .project .links .modal-footer .btn-group .btn + a, .modal-footer .btn-group #slideshow .project .links a + a, #slideshow .project .links .modal-footer .btn-group a + a {
+.modal-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
 
@@ -5663,7 +5663,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.carousel-caption .btn, .carousel-caption #slideshow .project .links a, #slideshow .project .links .carousel-caption a {
+.carousel-caption .btn {
   text-shadow: none;
 }
 
@@ -6308,12 +6308,28 @@ th.visible-print, td.visible-print {
     max-width: 960px;
   }
 }
+.body-md .container {
+  padding: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    left: 0%;
+  }
+}
 body {
   padding-top: 125px;
-  background-color: #FAF0D7;
+  background-color: #1A2952;
   background-image: url("../img/leaves.png");
   background-attachment: fixed;
   font-family: "Lato", sans-serif;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -6321,9 +6337,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   visibility: hidden;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 .fadeIn {
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .centered {
@@ -6343,6 +6367,9 @@ h2 {
   margin-top: 0px;
   font-family: "Yeseva One", serif;
   font-size: 40px;
+}
+.body-xs h2 {
+  font-size: 26px;
 }
 
 p {
@@ -6366,6 +6393,44 @@ dt {
   color: #687ba3;
 }
 
+.modal-backdrop.show {
+  background-color: #1A2952;
+  opacity: 0;
+}
+
+body.modal-open {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content {
+  background-color: #FAF0D7;
+  color: #fff;
+}
+.modal-content p {
+  color: #1A2952;
+}
+.modal-content button {
+  background-color: #E75574;
+  color: #fff;
+}
+.modal-content button:hover, .modal-content button:active {
+  background-color: #fd859e;
+  color: #fff;
+  border: 1px solid #fd859e;
+}
+.modal-content .padding {
+  margin: 2em;
+  background-color: #FAF0D7;
+}
+
+.modal-footer {
+  border-top: 0px;
+  text-align: center !important;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
 .header {
   width: 100%;
 }
@@ -6376,7 +6441,7 @@ dt {
   box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
-#candace {
+#candace, .dark-jumbotron.clear .container {
   -webkit-box-shadow: -4px 10px 9px -8px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: -4px 10px 9px -8px black;
   box-shadow: -4px 10px 9px -8px black;
@@ -6386,6 +6451,9 @@ dt {
   background-color: #FAF0D7;
   border-bottom: 0px;
 }
+.navbar-fixed-top .container {
+  padding: 0px;
+}
 .navbar-fixed-top h3 {
   color: #1A2952;
   font-family: "Yeseva One", serif;
@@ -6394,31 +6462,85 @@ dt {
   top: -5px;
   width: 50%;
 }
+.body-sm .navbar-fixed-top h3, .body-xs .navbar-fixed-top h3 {
+  font-size: 16px;
+}
 .navbar-fixed-top h3 span {
   font-weight: lighter;
   font-family: "Lato", sans-serif;
   color: #1A2952;
   font-size: 19px;
 }
-.navbar-fixed-top p {
+.body-sm .navbar-fixed-top h3 span, .body-xs .navbar-fixed-top h3 span {
+  font-size: 16px;
+}
+.navbar-fixed-top h3 a {
+  color: inherit;
+}
+.navbar-fixed-top h3 a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.body-sm .navbar-fixed-top #text-menu, .body-xs .navbar-fixed-top #text-menu {
+  display: none;
+}
+.body-md .navbar-fixed-top #text-menu, .body-lg .navbar-fixed-top #text-menu, .body-xl .navbar-fixed-top #text-menu {
+  display: block;
+}
+.navbar-fixed-top #text-menu p {
   margin-top: 2em;
   margin-bottom: 0px;
   float: right;
 }
-.navbar-fixed-top p a:first-child {
+.navbar-fixed-top #text-menu p a:first-child {
   margin-left: 2em;
 }
-@media (max-width: 417px) {
-  .navbar-fixed-top p {
-    float: none;
-    margin-top: 1em;
-  }
-  .navbar-fixed-top p a:first-child {
-    margin-left: 0px;
-  }
+.body-sm .navbar-fixed-top #text-menu p {
+  float: none;
+  margin-top: 1em;
+  display: none;
 }
-.navbar-fixed-top p img#github {
-  width: 20px;
+.body-sm .navbar-fixed-top #text-menu p a:first-child {
+  margin-left: 0px;
+}
+.navbar-fixed-top #text-menu .icon {
+  color: #1A2952;
+}
+.navbar-fixed-top #text-menu .icon:hover {
+  color: #687ba3;
+}
+.navbar-fixed-top .icon {
+  color: #1A2952;
+}
+.navbar-fixed-top .icon:hover {
+  color: #687ba3;
+}
+.navbar-fixed-top #hamburger-menu {
+  text-align: right;
+  display: none;
+  font-size: 25px;
+  margin-top: 16px;
+  color: #E75574;
+  cursor: pointer;
+}
+.navbar-fixed-top #hamburger-menu:hover {
+  color: #fd859e;
+}
+.body-sm .navbar-fixed-top #hamburger-menu, .body-xs .navbar-fixed-top #hamburger-menu {
+  display: block;
+}
+.body-md .navbar-fixed-top #hamburger-menu, .body-lg .navbar-fixed-top #hamburger-menu, .body-xl .navbar-fixed-top #hamburger-menu {
+  display: none;
+}
+.navbar-fixed-top #hamburger-menu p {
+  line-height: 35px;
+}
+.navbar-fixed-top #hamburger-menu .icon {
+  color: #1A2952;
+}
+
+#navbarToggleExternalContent {
+  display: none;
 }
 
 aside {
@@ -6459,6 +6581,9 @@ aside .container {
   padding-top: 3em;
   padding-bottom: 3em;
 }
+.body-xs .jumbotron .container {
+  padding: 2em;
+}
 .jumbotron .container.aside {
   background-color: #FAF0D7;
 }
@@ -6471,6 +6596,13 @@ aside .container {
 
 .dark-jumbotron {
   background-color: #1A2952;
+}
+.dark-jumbotron.clear {
+  background-color: transparent;
+}
+.dark-jumbotron.clear .container {
+  background-color: #1A2952;
+  margin-top: 2em;
 }
 .dark-jumbotron h2 {
   color: #FAF0D7;
@@ -6492,66 +6624,20 @@ aside .container {
   display: block;
 }
 
-#thumbnailJumbo {
-  background-color: white;
-  margin: 0px;
-}
-#thumbnailJumbo h2 {
-  margin-top: 1em;
-}
-
 .project {
   padding-bottom: 1em;
 }
 
-#slideshow {
-  display: none;
-}
-#slideshow .close {
-  margin-bottom: 1em;
-}
-#slideshow .navArrow {
-  line-height: 14px;
-  margin-right: 1em;
-  cursor: pointer;
-}
-#slideshow .navArrow span {
-  padding-top: 2px;
-  font-size: 14px;
-}
-#slideshow .project h3 {
-  color: #fefb9a;
-  font-weight: lighter;
-  margin-top: 0px;
-}
-#slideshow .project .dates {
-  color: #e8d9a7;
-  font-size: 13px;
-}
-#slideshow .project .technologies {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 13px;
-}
-#slideshow .project .description {
-  font-size: 17px;
-}
-#slideshow .project img {
-  max-width: 100%;
-  max-height: 400px;
-}
-#slideshow .project .links {
-  margin-bottom: 1em;
-}
-#slideshow .project .links a {
-  margin-right: 5px;
-}
-#slideshow .project .screenshots img.active {
-  display: block;
-}
-
 form#new-contact textarea {
-  height: 100px;
+  height: 150px;
+}
+form#new-contact button {
+  width: 220px;
+  margin-top: 2em;
+}
+form#new-contact button.done {
+  background-color: #687ba3;
+  border: 1px solid #687ba3;
 }
 
 .form-control {
@@ -6561,17 +6647,33 @@ form#new-contact textarea {
   color: #1A2952;
 }
 
+input.form-control, textarea.form-control {
+  padding: 16px !important;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+input.form-control {
+  height: 40px;
+}
+
 input::placeholder, textarea::placeholder {
-  color: #687ba3 !important;
+  color: #E75574 !important;
 }
 
 input:focus, textarea:focus {
   background-color: #FAF0D7 !important;
 }
 
+input.invalid, textarea.invalid {
+  border: 5px solid #E75574;
+}
+
 .btn-primary {
   background-color: #E75574;
   border-color: #E75574;
+  margin-top: 10px;
+  font-size: 17px;
 }
 .btn-primary:hover {
   background-color: #fd859e;
@@ -6581,6 +6683,13 @@ footer {
   background-color: #FAF0D7;
   padding: 10px;
   margin-top: 3em;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 0px;
+}
+footer .icon {
+  color: #1A2952;
 }
 
 .thumbnails {
@@ -6641,19 +6750,18 @@ footer {
   color: #282109;
 }
 
-.carousel {
-  margin-bottom: 1em;
-}
-.btn-default:hover, #slideshow .project .links a:hover {
+.btn-default:hover {
   background-color: #8c9a2b;
   border-color: #8c9a2b;
   color: white;
 }
 
 #candace {
-  width: 100%;
-  border: 12px solid #1A2952;
+  width: 80px;
+  border: 5px solid #1A2952;
   transform: rotate(-5deg);
+  float: left;
+  display: inline;
 }
 
 .badge-light {
