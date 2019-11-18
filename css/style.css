@@ -6358,6 +6358,10 @@ h3 {
   text-align: center;
 }
 
+.jumbotron p {
+  line-height: 1.5;
+}
+
 a {
   color: #E75574;
 }
