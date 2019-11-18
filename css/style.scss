@@ -9,7 +9,7 @@ $pink: #E75574;
 $lightPink: #EAC4CC;
 $faded-pink: #fd859e;
 $brightPink: #EA0F3E;
-$dark-grey: #2E2E2E;
+$dark-grey: #545454;
 
 $green: #8c9a2b;
 $lightGreen: #a5b341;
@@ -81,6 +81,7 @@ $easeIn: cubic-bezier(0.550, 0.085, 0.680, 0.530);
 	}
 }
 
+.row:before, .row:after {display: none !important;} // fix safari bug with bootstrap grid
 
 body { 
 	padding-top: 125px;
@@ -103,7 +104,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .fadeIn {
@@ -139,7 +140,7 @@ h2 {
 }
 p { 
 	visibility: hidden; // hidden on initial load
-	font-weight: lighter;
+	// font-weight: lighter;
 	font-size: 17px;
 	&.first-child { 
 		margin-top: 20px;
@@ -154,6 +155,12 @@ dt {
 	font-weight: lighter;
 	font-family: 'Yeseva One', serif;
 	color: $faded-blue;
+}
+
+.card {
+	background-color: $blue;
+	@extend %medium-drop-shadow;
+	padding: 3em;
 }
 
 .modal-backdrop.show {
@@ -356,6 +363,7 @@ aside {
 	background-color: $cream;
 	color: $dark-grey;
 	margin-bottom: 0px;
+	font-weight: normal;
 	.container { 
 		margin: 0px auto 0px auto;
 		padding-top: 3em;
@@ -385,11 +393,11 @@ aside {
 	background-color: $blue;
 	&.clear {
 		background-color: transparent;
-		.container {
-			background-color: $blue;
-			margin-top: 2em;
-			@extend %medium-drop-shadow;
-		}
+		// .container {
+		// 	background-color: $blue;
+		// 	margin-top: 2em;
+		// 	@extend %medium-drop-shadow;
+		// }
 	}
 	h2 {
 		color: $cream;
@@ -443,7 +451,7 @@ form#new-contact {
 input.form-control, textarea.form-control { 
 	padding: 16px !important;
 	font-size: 17px;
-	font-weight: lighter;
+	font-weight: normal;
 }
 
 input.form-control {
@@ -478,7 +486,6 @@ input, textarea {
 footer { 
 	background-color: $cream;
 	padding: 10px;
-	margin-top: 3em;
 	text-align: center;
 
 	p {
@@ -564,12 +571,17 @@ footer {
 }
 
 #candace {
-	width: 80px;
-	border: 5px solid $blue;
-	transform: rotate(-5deg);
-	@extend %medium-drop-shadow;
-	float: left;
-	display: inline;
+	float: right;
+
+	img {
+		width: 100%;
+	}
+
+	figcaption {
+		font-size: 15px;
+		font-style: italic;
+		line-height: 1.5;
+	}
 }
 
 .badge-light {

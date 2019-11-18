@@ -6317,6 +6317,10 @@ th.visible-print, td.visible-print {
     left: 0%;
   }
 }
+.row:before, .row:after {
+  display: none !important;
+}
+
 body {
   padding-top: 125px;
   background-color: #1A2952;
@@ -6338,7 +6342,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .fadeIn {
@@ -6374,7 +6378,6 @@ h2 {
 
 p {
   visibility: hidden;
-  font-weight: lighter;
   font-size: 17px;
 }
 p.first-child {
@@ -6384,13 +6387,18 @@ p.first-child {
 dd {
   font-size: 14px;
   margin-bottom: 10px;
-  color: #2E2E2E;
+  color: #545454;
 }
 
 dt {
   font-weight: lighter;
   font-family: "Yeseva One", serif;
   color: #687ba3;
+}
+
+.card {
+  background-color: #1A2952;
+  padding: 3em;
 }
 
 .modal-backdrop.show {
@@ -6441,7 +6449,7 @@ body.modal-open {
   box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
-#candace, .dark-jumbotron.clear .container {
+.card {
   -webkit-box-shadow: -4px 10px 9px -8px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: -4px 10px 9px -8px black;
   box-shadow: -4px 10px 9px -8px black;
@@ -6572,8 +6580,9 @@ aside .container {
 
 .jumbotron {
   background-color: #FAF0D7;
-  color: #2E2E2E;
+  color: #545454;
   margin-bottom: 0px;
+  font-weight: normal;
   padding: 0px;
 }
 .jumbotron .container {
@@ -6599,10 +6608,6 @@ aside .container {
 }
 .dark-jumbotron.clear {
   background-color: transparent;
-}
-.dark-jumbotron.clear .container {
-  background-color: #1A2952;
-  margin-top: 2em;
 }
 .dark-jumbotron h2 {
   color: #FAF0D7;
@@ -6650,7 +6655,7 @@ form#new-contact button.done {
 input.form-control, textarea.form-control {
   padding: 16px !important;
   font-size: 17px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 input.form-control {
@@ -6682,7 +6687,6 @@ input.invalid, textarea.invalid {
 footer {
   background-color: #FAF0D7;
   padding: 10px;
-  margin-top: 3em;
   text-align: center;
 }
 footer p {
@@ -6757,11 +6761,15 @@ footer .icon {
 }
 
 #candace {
-  width: 80px;
-  border: 5px solid #1A2952;
-  transform: rotate(-5deg);
-  float: left;
-  display: inline;
+  float: right;
+}
+#candace img {
+  width: 100%;
+}
+#candace figcaption {
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.5;
 }
 
 .badge-light {

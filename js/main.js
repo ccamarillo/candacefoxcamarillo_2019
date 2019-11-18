@@ -42,11 +42,6 @@ function replace_form_validation(form) {
         }
 	});
 
-	// $(':invalid', form).each(function(e) {
-	// 	console.log('getting here');
-	// 	$(this).tooltip();
-	// });
-
 	console.log(form);
 }
 
