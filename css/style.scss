@@ -144,7 +144,6 @@ h2 {
 }
 p { 
 	visibility: hidden; // hidden on initial load
-	// font-weight: lighter;
 	font-size: 17px;
 	&.first-child { 
 		margin-top: 20px;
@@ -384,9 +383,6 @@ aside {
 		padding-bottom: 3em;
 
 		.body-xs & {
-			// padding-top: 2.5em;
-			// padding-bottom: 2.5em;
-			// pa
 			padding: 2em;
 		}
 
@@ -407,11 +403,6 @@ aside {
 	background-color: $blue;
 	&.clear {
 		background-color: transparent;
-		// .container {
-		// 	background-color: $blue;
-		// 	margin-top: 2em;
-		// 	@extend %medium-drop-shadow;
-		// }
 	}
 	h2 {
 		color: $cream;
