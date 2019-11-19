@@ -6322,7 +6322,6 @@ th.visible-print, td.visible-print {
 }
 
 body {
-  padding-top: 125px;
   background-color: #1A2952;
   background-image: url("../img/leaves.png");
   background-attachment: fixed;
@@ -6447,7 +6446,7 @@ body.modal-open {
   width: 100%;
 }
 
-.navbar-fixed-top {
+#navbar {
   -webkit-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.15);
   box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.15);
@@ -6459,14 +6458,27 @@ body.modal-open {
   box-shadow: -4px 10px 9px -8px black;
 }
 
-.navbar-fixed-top {
+#navbarbefore,
+#navbar:after {
+  content: "";
+  display: table;
+}
+
+#navbar {
   background-color: #FAF0D7;
   border-bottom: 0px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+  margin-bottom: 125px;
 }
-.navbar-fixed-top .container {
-  padding: 0px;
+#navbar .container {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
-.navbar-fixed-top h3 {
+#navbar h3 {
   color: #1A2952;
   font-family: "Yeseva One", serif;
   font-size: 23px;
@@ -6474,85 +6486,85 @@ body.modal-open {
   top: -5px;
   width: 50%;
 }
-.body-sm .navbar-fixed-top h3, .body-xs .navbar-fixed-top h3 {
+.body-sm #navbar h3, .body-xs #navbar h3 {
   font-size: 16px;
 }
-.navbar-fixed-top h3 span {
+#navbar h3 span {
   font-weight: lighter;
   font-family: "Lato", sans-serif;
   color: #1A2952;
   font-size: 19px;
 }
-.body-sm .navbar-fixed-top h3 span, .body-xs .navbar-fixed-top h3 span {
+.body-sm #navbar h3 span, .body-xs #navbar h3 span {
   font-size: 16px;
 }
-.navbar-fixed-top h3 a {
+#navbar h3 a {
   color: inherit;
 }
-.navbar-fixed-top h3 a:hover {
+#navbar h3 a:hover {
   color: inherit;
   text-decoration: none;
 }
-.body-sm .navbar-fixed-top #text-menu, .body-xs .navbar-fixed-top #text-menu {
+.body-sm #navbar #text-menu, .body-xs #navbar #text-menu {
   display: none;
 }
-.body-md .navbar-fixed-top #text-menu, .body-lg .navbar-fixed-top #text-menu, .body-xl .navbar-fixed-top #text-menu {
+.body-md #navbar #text-menu, .body-lg #navbar #text-menu, .body-xl #navbar #text-menu {
   display: block;
 }
-.navbar-fixed-top #text-menu p {
+#navbar #text-menu p {
   margin-top: 2em;
   margin-bottom: 0px;
   float: right;
 }
-.navbar-fixed-top #text-menu p a:first-child {
+#navbar #text-menu p a:first-child {
   margin-left: 2em;
 }
-.body-sm .navbar-fixed-top #text-menu p {
+.body-sm #navbar #text-menu p {
   float: none;
   margin-top: 1em;
   display: none;
 }
-.body-sm .navbar-fixed-top #text-menu p a:first-child {
+.body-sm #navbar #text-menu p a:first-child {
   margin-left: 0px;
 }
-.navbar-fixed-top #text-menu .icon {
+#navbar #text-menu .icon {
   color: #1A2952;
 }
-.navbar-fixed-top #text-menu .icon:hover {
+#navbar #text-menu .icon:hover {
   color: #687ba3;
 }
-.navbar-fixed-top .icon {
+#navbar .icon {
   color: #1A2952;
 }
-.navbar-fixed-top .icon:hover {
+#navbar .icon:hover {
   color: #687ba3;
 }
-.navbar-fixed-top #hamburger-menu {
+#navbar #hamburger-menu {
   text-align: right;
   display: none;
   font-size: 25px;
-  margin-top: 16px;
+  margin-top: 7px;
   color: #E75574;
   cursor: pointer;
 }
-.navbar-fixed-top #hamburger-menu:hover {
+#navbar #hamburger-menu:hover {
   color: #fd859e;
 }
-.body-sm .navbar-fixed-top #hamburger-menu, .body-xs .navbar-fixed-top #hamburger-menu {
+.body-sm #navbar #hamburger-menu, .body-xs #navbar #hamburger-menu {
   display: block;
 }
-.body-md .navbar-fixed-top #hamburger-menu, .body-lg .navbar-fixed-top #hamburger-menu, .body-xl .navbar-fixed-top #hamburger-menu {
+.body-md #navbar #hamburger-menu, .body-lg #navbar #hamburger-menu, .body-xl #navbar #hamburger-menu {
   display: none;
 }
-.navbar-fixed-top #hamburger-menu p {
-  line-height: 35px;
-}
-.navbar-fixed-top #hamburger-menu .icon {
+#navbar #hamburger-menu .icon {
   color: #1A2952;
 }
 
 #navbarToggleExternalContent {
   display: none;
+}
+#navbarToggleExternalContent p {
+  font-size: 14px;
 }
 
 aside {
@@ -6645,8 +6657,10 @@ form#new-contact textarea {
   height: 150px;
 }
 form#new-contact button {
-  width: 220px;
   margin-top: 2em;
+}
+.body-xs form#new-contact button .hide-xs {
+  display: none;
 }
 form#new-contact button.done {
   background-color: #687ba3;

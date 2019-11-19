@@ -49,6 +49,8 @@ $(document).ready(function() {
 
 	body_classes();
 
+	Stickyfill.add($('#navbar'));
+
 	$(window).resize(function() {
 		body_classes();
 		$('.collapse').collapse('hide');

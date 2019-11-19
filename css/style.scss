@@ -84,7 +84,7 @@ $easeIn: cubic-bezier(0.550, 0.085, 0.680, 0.530);
 .row:before, .row:after {display: none !important;} // fix safari bug with bootstrap grid
 
 body { 
-	padding-top: 125px;
+	// padding-top: 125px;
 	background-color: $blue;
 	background-image: $background-image;
 	background-attachment: fixed;
@@ -224,12 +224,26 @@ body.modal-open {
 	box-shadow: -4px 10px 9px -8px rgba(0,0,0,10);
 }
 
-.navbar-fixed-top { 
+#navbarbefore,
+#navbar:after {
+    content: '';
+    display: table;
+}
+
+#navbar {
 	background-color: $cream;
 	border-bottom: 0px;
 	@extend %light-drop-shadow;
+	width: 100%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	z-index: 9999;
+	margin-bottom: 125px;
+
 	.container { 
-		padding: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
 	}
 	h3 { 
 
@@ -309,7 +323,7 @@ body.modal-open {
 		text-align: right;
 		display: none;
 		font-size: 25px;
-		margin-top: 16px;
+		margin-top: 7px;
 		color: $pink;
 		cursor: pointer;
 		&:hover {
@@ -321,9 +335,6 @@ body.modal-open {
 		.body-md &, .body-lg &, .body-xl & {
 			display: none;
 		} 
-		p {
-			line-height: 35px;
-		}
 		.icon {
 			color: $blue;
 		}
@@ -332,6 +343,10 @@ body.modal-open {
 
 #navbarToggleExternalContent {
 	display: none;
+
+	p {
+		font-size: 14px;
+	}
 }
 
 aside { 
@@ -435,8 +450,13 @@ form#new-contact {
 	}
 
 	button {
-		width: 220px;
 		margin-top: 2em;
+
+		.hide-xs {
+			.body-xs & {
+				display: none;
+			}
+		}
 	}
 
 	button.done {
