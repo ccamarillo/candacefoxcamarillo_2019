@@ -6589,6 +6589,10 @@ aside .container {
   font-weight: normal;
   padding: 0px;
 }
+.body-xs .jumbotron#contact .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .jumbotron .container {
   margin: 0px auto 0px auto;
   padding-top: 3em;

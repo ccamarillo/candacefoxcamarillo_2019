@@ -368,6 +368,16 @@ aside {
 	color: $dark-grey;
 	margin-bottom: 0px;
 	font-weight: normal;
+
+	&#contact {
+		.container {
+			.body-xs & {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+		}	
+	}
+
 	.container { 
 		margin: 0px auto 0px auto;
 		padding-top: 3em;
