@@ -164,6 +164,7 @@ dt {
 	background-color: $blue;
 	@extend %medium-drop-shadow;
 	padding: 3em;
+	margin: 3em !important;
 }
 
 .modal-backdrop.show {

@@ -101,6 +101,7 @@ $(document).ready(function() {
 			},
 			error: function(response) {
 				$('#contact-error').modal()
+				$('#new-contact button').html('Send <span class="hide-xs">a secure message </span> &nbsp;&nbsp;<i class="fas fa-lock"></i>')
 			}
         });
 	});
