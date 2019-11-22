@@ -6357,6 +6357,10 @@ h3 {
   text-align: center;
 }
 
+.right {
+  text-align: right;
+}
+
 .jumbotron p {
   line-height: 1.4;
 }
@@ -6402,6 +6406,7 @@ dt {
 .card {
   background-color: #1A2952;
   padding: 3em;
+  margin: 3em !important;
 }
 
 .modal-backdrop.show {
@@ -6713,6 +6718,10 @@ footer {
 }
 footer p {
   margin-bottom: 0px;
+  text-align: left;
+}
+.body-sm footer p, .body-xs footer p {
+  text-align: center;
 }
 footer .icon {
   color: #1A2952;

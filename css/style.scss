@@ -120,6 +120,10 @@ h3 {
 	text-align: center;
 }
 
+.right {
+	text-align: right;
+}
+
 .jumbotron p {
 	line-height: 1.4;
 }
@@ -516,6 +520,11 @@ footer {
 
 	p {
 		margin-bottom: 0px;
+		text-align: left;
+
+		.body-sm &, .body-xs & {
+			text-align: center;
+		}
 	}
 
 	.icon {
