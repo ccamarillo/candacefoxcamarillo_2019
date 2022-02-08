@@ -6412,6 +6412,9 @@ dt {
   padding: 3em;
   margin: 3em !important;
 }
+.body-xs .card {
+  margin: 0px !important;
+}
 
 .modal-backdrop.show {
   background-color: #1A2952;

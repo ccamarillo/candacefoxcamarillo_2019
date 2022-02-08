@@ -19,6 +19,7 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="https://kit.fontawesome.com/3feff1d927.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -304,33 +305,18 @@
             </div>
         </div>
 
-        <a class="anchor" id="contact"></a>
-        <div id="contact" class="jumbotron dark-jumbotron clear">
-            <div class="container-fluid">
-                <div class="row">  
-                    <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                        <div class="card">
-                            <h2 class="centered">Get in touch!</h2>
-                            <form class="ajaxForm" id="new-contact" action="https://formcarry.com/s/Q6yhhGiea22" method="POST">
-                                <div class="form-row">
-                                    <div class="col-12">
-                                        <input name="name" required="true" type="text" class="form-control" placeholder="Your name" />
-                                    </div>
-                                    <div class="col-12">
-                                        <input name="email" required="true" type="email" class="form-control" placeholder="Your email" />
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col">
-                                        <textarea name="message" required="true" class="form-control" placeholder="Your message" rows="5"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col centered">
-                                        <button type="submit" class="btn btn-primary">Send <span class="hide-xs">a secure message </span> &nbsp;&nbsp;<i class="fas fa-lock"></i></button>
-                                    </div>
-                                </div>
-                            </form>
+        <div id="app-contact-form">
+            <a class="anchor" id="contact"></a>
+            <div id="contact" class="jumbotron dark-jumbotron clear">
+                <div class="container-fluid">
+                    <div class="row">  
+                        <div class="col-xl-8 offset-xl-2 col-sm-12 col-xs-12">
+                            <div class="card">
+                                <h2 class="centered">Get in touch!</h2>
+                                <!-- <form class="ajaxForm" id="new-contact" action="https://formcarry.com/s/Q6yhhGiea22" method="POST"> -->
+                                    <contact-form-element :form_fields_prop=formFields />    
+                                <!-- </form> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,7 +329,7 @@
                     <div class="col-md-6">
                         <p class="text-muted left">
                             <small>
-                                &copy; 2020 Candace Camarillo 
+                                &copy; 2022 Candace Camarillo 
                             </small>
                         </p>
                     </div>
@@ -362,13 +348,18 @@
                 </div>
             </div>
         </footer>
+
+        
         
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/vue.js"></script>
     </body>
 </html>

@@ -173,6 +173,10 @@ dt {
 	@extend %medium-drop-shadow;
 	padding: 3em;
 	margin: 3em !important;
+
+	.body-xs & {
+		margin: 0px !important;
+	}
 }
 
 .modal-backdrop.show {

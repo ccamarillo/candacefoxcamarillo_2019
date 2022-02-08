@@ -21,30 +21,6 @@ function body_classes() {
 	}   
 };
 
-function replace_form_validation(form) {
-	var error_message = $('<div class="input-error">HEY!</div>"');
-	
-	$('input, textarea', form).on("invalid", function(e) {
-		e.preventDefault();
-		$(this).addClass('invalid');
-	});
-
-	$('input, textarea', form).change(function(e) {
-		e.preventDefault();
-		if (this.checkValidity()) {
-			$(this).removeClass('invalid');
-		}
-	});
-
-	form.on('submit', function(e) {
-		if ( !this.checkValidity() ) {
-            e.preventDefault();
-        }
-	});
-
-	console.log(form);
-}
-
 $(document).ready(function() {
 
 	body_classes();
@@ -54,10 +30,6 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		body_classes();
 		$('.collapse').collapse('hide');
-	});
-
-	$('form').each(function(index, value) {
-		replace_form_validation($(this));
 	});
 
 	var fontYesevaOne = new FontFaceObserver('Yeseva One');
@@ -71,43 +43,6 @@ $(document).ready(function() {
 		$(hiddenTextClasses).css('visibility', 'visible');
 	});
 
-	$("#new-contact input, #new-contact textarea").focus(function (e) {
-		$('#new-contact button').removeClass('done');
-		$('#new-contact button').html('Send a secure message &nbsp;&nbsp;<i class="fas fa-lock"></i>');
-		
-	});
-
-	$("form#new-contact").submit(function(e){
-        e.preventDefault();
-        var href = $(this).attr("action");
-        $.ajax({
-            type: "POST",
-			dataType: "json",
-			jsonp: "method",
-            url: href,
-			data: $(this).serialize(),
-			beforeSend: function(response) {
-				$('#new-contact button').html('Sending....');
-			},
-            success: function(response){
-				if(response.status == "success"){
-					$('#new-contact button').blur();
-					$('#new-contact button').addClass('done');
-					$('#new-contact button').html('Done!');
-					$(".ajaxForm")[0].reset()	
-                }else{
-                    alert("An error occured: " + response.message);
-                }
-			},
-			error: function(response) {
-				$('#contact-error').modal()
-				$('#new-contact button').html('Send <span class="hide-xs">a secure message </span> &nbsp;&nbsp;<i class="fas fa-lock"></i>')
-			}
-        });
-	});
-
-
-
 	$('#navbarToggleExternalContent a').click(function() {
 		$('#navbarToggleExternalContent').collapse("toggle");
 	});
@@ -116,5 +51,4 @@ $(document).ready(function() {
 		$('#navbarToggleExternalContent').collapse("toggle");
 	});
 });
-
 
