@@ -6507,8 +6507,11 @@ body.modal-open {
   color: #1A2952;
   font-size: 19px;
 }
-.body-sm #navbar h3 span, .body-xs #navbar h3 span {
+.body-sm #navbar h3 span {
   font-size: 16px;
+}
+.body-xs #navbar h3 span {
+  font-size: 14px;
 }
 #navbar h3 a {
   color: inherit;

@@ -39,24 +39,34 @@ Vue.component('ContactFormElement', {
         },
         checkForm: function(e) { 
             e.preventDefault();
+            
             var href = this.formAction;
             this.buttonMessage = 'Sending...';
             self = this;
-            axios.post(this.formAction, {
-                name: this.name,
-                email: this.email,
-                message: this.message
-            }).then(function(response) { 
-                if (response.status === 200) {
-                    self.buttonMessage = 'Done!';
-					self.name = '';
-                    self.email = '';
-                    self.message = '';	
-                }
-            }).catch(function(response) { 
-                alert('An error occured when sending your message.  Try again in a few minutes.')
-                this.buttonMessage = 'Send.';
+            grecaptcha.ready(function() {
+                grecaptcha.execute('r6LexF6IeAAAAALEqtBdn99nF5aoBuZqB8g6uG7v_', {action: 'submit'}).then(function(token) {
+                    if (token.score === 1) {
+                        axios.post(this.formAction, {
+                            name: this.name,
+                            email: this.email,
+                            message: this.message
+                        }).then(function(response) { 
+                            if (response.status === 200) {
+                                self.buttonMessage = 'Done!';
+                        		self.name = '';
+                                self.email = '';
+                                self.message = '';	
+                            }
+                        }).catch(function(response) { 
+                            alert('An error occured when sending your message.  Try again in a few minutes.')
+                            this.buttonMessage = 'Send.';
+                        });
+                    } else {
+                        alert('No robots allowed.');
+                    }
+                });
             });
+            
         }
     },
     data: function() {

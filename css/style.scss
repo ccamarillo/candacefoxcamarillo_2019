@@ -276,8 +276,12 @@ body.modal-open {
 			color: $blue;
 			font-size: 19px;
 
-			.body-sm &, .body-xs & {
+			.body-sm & {
 				font-size: 16px;
+			}
+
+			.body-xs & {
+				font-size: 14px;
 			}
 		}
 
